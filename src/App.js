@@ -11,7 +11,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <Sidebar />
+        <Sidebar className="sidebar" />
         <main className="content">
           <Switch>
             <Route exact component={AboutRoute} path="/" />
