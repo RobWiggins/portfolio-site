@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Contact from '../Components/Contact/Contact'
 
 export default class ContactRoute extends Component {
 
@@ -6,7 +7,7 @@ export default class ContactRoute extends Component {
   render() {
     return (
       <div className="contact-pane">
-        I'm the contact pane
+        <Contact></Contact>
       </div>
     )
   }
