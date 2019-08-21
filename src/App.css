@@ -13,11 +13,11 @@ body {
   height: 100vh;
   display: grid;
   grid-template-areas: 
-      "menu-container",
-      "content",
-      "footer";
+      "sidebar content content",
+      "sidebar content content",
+      "sidebar footer footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 130px 800px 250px;
+  /* grid-template-rows: 130px 800px 250px; */
 }
 
 .footer ul {
@@ -25,7 +25,11 @@ body {
 }
 
 .content {
-  /* grid-area: content;   */
+  grid-area: content;
+  grid-row-start: 0;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;  
   /* consider background url */
 }
 
@@ -34,7 +38,11 @@ main {
 }
 
 .sidebar {
-  grid-area: menuContainer;
+  grid-area: sidebar;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
   background: linear-gradient(to right, 
   rgb(85, 134, 190),
   rgb(51, 75, 119),
@@ -44,10 +52,28 @@ main {
 
 .footer {
   grid-area: footer;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
+
+.footer-items > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 
 .content, .menu-container, .footer {
   padding: 1em;
 }
+
+.menu-container {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* format Li's within menu-container */
 
 

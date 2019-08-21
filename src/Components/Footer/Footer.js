@@ -4,7 +4,7 @@ import './Footer.css';
 export default class Footer extends Component {
   render() {
     return (
-      <div className="footer">
+      <div className="footer-items">
         <ul>
           <li key={1}>
             <img src="../../static/social-1_logo-twitter.svg" />
