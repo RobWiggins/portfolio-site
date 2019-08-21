@@ -20,8 +20,9 @@ body {
   /* grid-template-rows: 130px 800px 250px; */
 }
 
-.footer ul {
+.footer > ul {
   list-style: none;
+  background-color: lightseagreen;
 }
 
 .content {
@@ -40,7 +41,7 @@ main {
 .sidebar {
   grid-area: sidebar;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 1;
   background: linear-gradient(to right, 
@@ -73,7 +74,8 @@ main {
 .menu-container {
   display:flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  
+  justify-content: space-between;
   align-items: center;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -84,3 +86,32 @@ main {
   
 } */
 
+/* Contact formatting */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.message-area {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.menu {
+  grid-area: menu-container; /* check if correct?? class? */
+  height: 100vh;
+  background: yellow;
+  padding: 20px;
+}
+
+.menu-links {
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0px;
+}

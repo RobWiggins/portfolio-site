@@ -6,7 +6,6 @@ export default class Portfolio extends Component {
     return (
       <section className="portfolio-info">
         <h1>Portfolio</h1>
-        <h1></h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
           deserunt, doloremque consequatur enim ducimus dolorum molestiae, nobis
@@ -18,8 +17,8 @@ export default class Portfolio extends Component {
           Distinctio, non!
         </p>
         
-        <Link to="/portfolio">
-          <button className="call-action">Check out my work</button>
+        <Link to="/contact">
+          <button className="call-action">Talk to me!</button>
         </Link>
       </section>
     );

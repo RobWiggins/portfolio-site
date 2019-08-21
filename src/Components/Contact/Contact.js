@@ -16,7 +16,12 @@ export default class Contact extends Component {
           non repudiandae tempora ex ut tempore inventore perspiciatis?
           Distinctio, non!
         </p>
-        
+        <form className="message-area">
+          <label>Drop me a message</label>
+          <textarea className="formTextArea">
+
+          </textarea>
+        </form>
       </section>
     );
   }

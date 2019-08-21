@@ -8,7 +8,7 @@ export default class Sidebar extends Component {
     return (
       <div className="menu-container">
       <nav className="menu">
-        <ul>
+        <ul className="menu-links">
           <li key={1}><Link className="menu-item"to='/'>About</Link></li>
           <li key={2}><Link className="menu-item"to='/portfolio'>Portfolio</Link></li>
           <li key={3}><Link className="menu-item"to='/contact'>Contact</Link></li>
