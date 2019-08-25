@@ -11,9 +11,9 @@ export default class About extends Component {
           aria-hidden
           alt="Beautiful photo headshot of Rob Wiggins."
         />
-        <h1>I'm Rob Wiggins and I love full-stack web development.</h1>
-        <h1>Welcome to my humble corner of the internet.</h1>
-        <p>
+        <h1 className="tagline">I'm Rob Wiggins and I love full-stack web development.</h1>
+        <h2 className="welcome-text">Welcome to my humble corner of the internet.</h2>
+        <p className="summary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
           deserunt, doloremque consequatur enim ducimus dolorum molestiae, nobis
           adipisci expedita sequi dignissimos quaerat nisi saepe laudantium

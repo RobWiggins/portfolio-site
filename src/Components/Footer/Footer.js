@@ -6,11 +6,11 @@ export default class Footer extends Component {
     return (
       <div className="footer-items">
         <ul>
-          <li key={1}>
+          <li key={1} className="icon">
             <img src="../../static/social-1_logo-twitter.svg" />
           </li>
-          <li key={2}>icon</li>
-          <li key={3}>icon</li>
+          <li key={2} className="icon">icon</li>
+          <li key={3} className="icon">icon</li>
         </ul>
       </div>
     );
