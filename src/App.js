@@ -11,7 +11,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <Sidebar className="sidebar" />
+        <div className="sidebar">
+          <Sidebar />
+        </div>
         <main className="content">
           <Switch>
             <Route exact component={AboutRoute} path="/" />
@@ -19,7 +21,9 @@ export default class App extends React.Component {
             <Route component={ContactRoute} path="/contact" />
           </Switch>
         </main>
-        <Footer className="footer" />
+        <div className="footer">
+          <Footer />          
+        </div>
       </div>
     );
   }
