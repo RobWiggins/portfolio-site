@@ -13,9 +13,9 @@ body {
   height: 100vh;
   display: grid;
   grid-template-areas: 
-      "sidebar content content",
-      "sidebar content content",
-      "sidebar footer footer";
+      "sidebar sidebar",
+      "content content",
+      "footer footer";
   grid-template-columns: 1fr;
   /* grid-template-rows: 130px 800px 250px; */
 }
@@ -32,10 +32,10 @@ body {
 
 .content {
   grid-area: content;
-  grid-row-start: 0;
-  grid-row-end: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;  
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;  
   text-align: center;
   /* consider background url */
 }
@@ -43,9 +43,9 @@ body {
 .sidebar {
   grid-area: sidebar;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 1;
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: 2;
   justify-content: center;
 }
 
@@ -57,7 +57,7 @@ body {
 /* trying to get ul to stretch across whole menu bar */
 .menu-container {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   background: linear-gradient(to right, 
   rgb(85, 134, 190),
   rgb(51, 75, 119),
@@ -65,14 +65,14 @@ body {
   justify-content: space-between;
   align-items: center;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 1;
 }
 
 .menu-links {
   display: flex;
-  height: 60vh;
+  /* height: 60vh; */
   justify-content: space-evenly;
-  flex-direction: column;
+  flex-direction: row;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0px;
@@ -136,8 +136,8 @@ body {
   grid-area: footer;
   grid-row-start: 3;
   grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .footer-items > ul {
@@ -184,10 +184,14 @@ main {
 
 .menu {
     grid-area: menu-container; /* check if correct?? class? */
-    height: 100vh;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
+/*
+ ! * DESKTOP FORMAT
+  */
 @media (min-width: 1040px) {
   .container {
       grid-template-areas:
@@ -195,6 +199,33 @@ main {
           "sidebar footer";
       grid-template-columns: 300px 1fr;
       grid-template-rows: 1fr auto;
+  }
+
+  .content {
+    grid-area: content;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;  
+    text-align: center;
+    /* consider background url */
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    justify-content: center;
+  }
+
+  .footer {
+    grid-area: footer;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .menu-links {
