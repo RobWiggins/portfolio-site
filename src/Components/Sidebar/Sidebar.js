@@ -1,21 +1,55 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import './Sidebar.css'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './Sidebar.css';
 
 export default class Sidebar extends Component {
+  state = {
+    activePane: 0,
+  };
+
+  handleClickLink = (e, idx) => {
+    e.preventDefault();
+    this.setState({ activePane: idx });
+  };
+
+  generateNavLinks() {
+    let linksInfo = [
+      {
+        path: '/',
+        linkName: 'About',
+      },
+      {
+        path: '/portfolio',
+        linkName: 'Portfolio',
+      },
+      {
+        path: '/contact',
+        linkName: 'Contact',
+      },
+    ];
+    return linksInfo.map((link, idx) => {
+      return (
+        <li
+          className={`li-link-nav`}
+          key={idx}
+          onClick={e => this.handleClickLink(e, idx)}
+        >
+          <Link className={`menu-item ${idx === this.state.activePane && 'current-page-nav'}`} to={link.path}>
+            {link.linkName}
+          </Link>
+        </li>
+      );
+    });
+  }
 
   render() {
+    let navLinkElems = this.generateNavLinks();
     return (
       <div className="menu-container">
-      <nav className="menu">
-        <ul className="menu-links">
-          <li key={1}><Link className="menu-item"to='/'>About</Link></li>
-          <li key={2}><Link className="menu-item"to='/portfolio'>Portfolio</Link></li>
-          <li key={3}><Link className="menu-item"to='/contact'>Contact</Link></li>
-        </ul>
-      </nav>
+        <nav className="menu">
+          <ul className="menu-links">{navLinkElems}</ul>
+        </nav>
       </div>
     );
   }
-  
 }
