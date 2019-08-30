@@ -7,6 +7,11 @@ body {
   justify-content: center;
 }
 
+/* remove gray background on button click for all buttons */
+button {
+  outline: none;
+}
+
 .container {
   font-size: 1.5em;
   width: 100%;
@@ -17,12 +22,11 @@ body {
       "content content",
       "footer footer";
   grid-template-columns: 1fr;
-  /* grid-template-rows: 130px 800px 250px; */
+  grid-template-rows: 80px auto 100px;
 }
 
 .footer > ul {
   list-style: none;
-  background-color: lightseagreen; /* TODO Used?? */
 }
 
 .icon {
@@ -216,7 +220,7 @@ main {
       grid-template-areas:
           "sidebar content"
           "sidebar footer";
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 200px 1fr;
       grid-template-rows: 1fr auto;
   }
 
@@ -264,7 +268,7 @@ main {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      padding: 20px;
+      /* padding: 20px; */
       width: 100%;
   }
 
@@ -273,7 +277,7 @@ main {
       rgb(85, 134, 190),
       rgb(51, 75, 119),
       rgb(44, 39, 90)); */
-      padding-top: 3em;
+      /* padding-top: 3em; */
   }
 
   .content {
@@ -287,7 +291,7 @@ main {
   }
 
   .tagline {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .summary {
