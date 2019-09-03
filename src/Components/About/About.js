@@ -7,9 +7,9 @@ export default class About extends Component {
       <section className="about-info">
         <img
           className="headshot"
-          src="../../static/headshot.png"
+          src="../../static/cropped_headshot_1.jpeg"
           aria-hidden
-          alt="Beautiful photo headshot of Rob Wiggins."
+          alt="Stunning headshot of Rob Wiggins."
         />
         <h1 className="tagline">I'm Rob Wiggins and I love full-stack web development.</h1>
         <h2 className="welcome-text">Welcome to my humble corner of the internet.</h2>
