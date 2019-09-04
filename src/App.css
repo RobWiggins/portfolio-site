@@ -152,6 +152,24 @@ button {
   cursor: pointer;
 }
 
+/* 
+ TODO
+ portfolio pane 
+*/
+.barometer-screenshot {
+  min-width: 260px;
+  /* max-width: 780px; */
+  height: auto;
+  width: 90%;
+}
+
+/* .project-screenshot:click {
+  min-width: 260px;
+  max-width: 780px;
+  height: auto;
+  width: 90%;
+} */
+
 .footer {
   grid-area: footer;
   grid-row-start: 3;
@@ -189,7 +207,6 @@ main {
 }
 
 
-
 /* Contact formatting */
 .contact-info {
     display: flex;
@@ -214,7 +231,7 @@ main {
 
 /*
  ! * DESKTOP FORMAT
-  */
+*/
 @media (min-width: 1040px) {
   .container {
       grid-template-areas:
