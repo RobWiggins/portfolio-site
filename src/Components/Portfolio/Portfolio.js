@@ -8,6 +8,8 @@ import './Portfolio.css'
 export default class Portfolio extends Component {
   
 
+
+  
   render() {
 
     let projects = projectData.map( (project, idx) => {

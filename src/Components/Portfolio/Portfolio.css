@@ -4,6 +4,7 @@
 
 .projects-list-container {
   list-style-type: none;
+  padding-left: 0;
 }
 
 /*

@@ -36,6 +36,7 @@ export default class Project extends Component {
 
     return (
       <div className="project-container">
+        <div className="photo-area">
         <img
           className="project-screenshot"
           src={`../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].name}`}
@@ -58,6 +59,7 @@ export default class Project extends Component {
           </button>
         </div>
         <ul className="scr-shots-num-holder">{screenshotElems}</ul>
+        </div>
         <p className="project-description">
           {this.props.project.description}
         </p>
