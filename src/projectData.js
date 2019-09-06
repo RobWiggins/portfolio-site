@@ -23,12 +23,58 @@ const projectData = [
       'NewsAPI.org',
       'Jest, Enzyme, Chai, Mocha (testing)',
     ],
-    screenshotFileNames: [
-      'SI_landing.jpg',
-      'SI_dashboard_reps.jpg',
-      'SI_dashboard_news.jpg',
-      'SI_mobile_shots.jpg',
-      'SI_organization_contribs.jpg',
+    screenshotFiles: [
+      {
+        name: 'SI_landing.jpg',
+        alt: 'Stay Informed landing page with a welcome message',
+      },
+      {
+        name: 'SI_dashboard_reps.jpg',
+        alt:
+          'Stay Informed Dashboard page, holding representatives and district information',
+      },
+      {
+        name: 'SI_dashboard_news.jpg',
+        alt:
+          'News portion of dashboard that holds articles that mention your district representatives',
+      },
+      { name: 'SI_mobile_shots.jpg', alt: 'mobile responsive screenshots' },
+      {
+        name: 'SI_organization_contribs.jpg',
+        alt: 'Highest organizational money contributions within a bar chart',
+      },
+    ],
+  },
+  {
+    title: 'Spaced Repetition',
+    description: `The Spaced Repetition web app utilizes the spaced repetition learning system to aid learning words in French. 
+    It displays words in French and asks you to recall the translation of the corresponding word in English. The words that you 
+    miss more frequently are shown more frequently. Upon mastery of each word, each word will 
+    get asked progressively less often. The home dashboard shows your language, words to learn, and score for each word.`,
+    demoLink: 'https://spacedrepetitionlearn.now.sh',
+    githubLink: 'https://github.com/RobertWiggins/spaced-repetition-api',
+    sourceCodeSide: 'back',
+    tech: [
+      'React',
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'HTML',
+      'CSS',
+      'Cypress, Chai, Mocha (testing)',
+    ],
+    screenshotFiles: [
+      {
+        name: 'SR_register.jpg',
+        alt: 'Spaced Repetition register account page',
+      },
+      {
+        name: 'SR_dashboard.jpg',
+        alt:
+          'Dashboard page which holds your word list and score for each word',
+      },
+      { name: 'SR_apprende_word.jpg', alt: 'Word translation question page' },
+      { name: 'SR_answer_result.jpg', alt: 'Word translation answer feedback' },
     ],
   },
   {
@@ -52,31 +98,16 @@ const projectData = [
       'IBM Watson Natural Language Analysis API',
       'Jest, Enzyme, Chai, Mocha (testing)',
     ],
-    screenshotFileNames: ['barometer_full.png', 'barometer_mobile_iphone8.png'],
-  },
-  {
-    title: 'Spaced Repetition',
-    description: `The Spaced Repetition web app utilizes the spaced repetition learning system to aid learning words in French. 
-    It displays words in French and asks you to recall the translation of the corresponding word in English. The words that you 
-    miss more frequently are shown more frequently. Upon mastery of each word, each word will 
-    get asked progressively less often. The home dashboard shows your language, words to learn, and score for each word.`,
-    demoLink: 'https://spacedrepetitionlearn.now.sh',
-    githubLink: 'https://github.com/RobertWiggins/spaced-repetition-api',
-    sourceCodeSide: 'back',
-    tech: [
-      'React',
-      'Node.js',
-      'Express',
-      'PostgreSQL',
-      'HTML',
-      'CSS',
-      'Cypress, Chai, Mocha (testing)',
-    ],
-    screenshotFileNames: [
-      'SR_register.jpg',
-      'SR_dashboard.jpg',
-      'SR_apprende_word.jpg',
-      'SR_answer_result.jpg',
+    screenshotFiles: [
+      {
+        name: 'barometer_full.png',
+        alt:
+          'Barometer home search page, housing a tweet keyword query, emotion charts, and 20 matched tweets',
+      },
+      {
+        name: 'barometer_mobile_iphone8.png',
+        alt: 'Mobile responsive emotion charts',
+      },
     ],
   },
 ]

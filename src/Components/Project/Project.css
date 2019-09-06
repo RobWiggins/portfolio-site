@@ -1,0 +1,22 @@
+/* 
+ ! * Mobile Format
+*/
+.project-screenshot {
+  width: 90%;
+  height: auto;
+}
+
+.scr-shots-num-holder {
+  list-style-type: none;
+}
+
+/*
+ ! * DESKTOP FORMAT
+*/
+@media (min-width: 1040px) {
+  .project-screenshot {
+    width: 70%;
+    height: auto;
+  }
+}
+

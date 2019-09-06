@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import Project from '../Project/Project'
 import projectData from '../../projectData'
 
+import './Portfolio.css'
+
 export default class Portfolio extends Component {
   
 

@@ -1,0 +1,15 @@
+/* 
+ ! * Mobile/other Format
+*/
+
+.projects-list-container {
+  list-style-type: none;
+}
+
+/*
+ ! * DESKTOP FORMAT
+*/
+@media (min-width: 1040px) {
+  
+}
+
