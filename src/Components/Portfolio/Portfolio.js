@@ -1,28 +1,23 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Project from '../Project/Project'
+import projectData from '../../projectData'
 
 export default class Portfolio extends Component {
+  
+
   render() {
+
+    let projects = projectData.map( (project, idx) => {
+      return <li className="project-li" key={idx}><Project project={project} /></li>
+    })
+
     return (
       <section className="portfolio-info">
-        <h1>Portfolio</h1>
-        <img
-          className="project-screenshot barometer-screenshot"
-          src="../../static/barometer_full.png"
-          alt="barometer home search page screenshot, containing a list of tweets and a bar graph of different emotions."
-        ></img>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          deserunt, doloremque consequatur enim ducimus dolorum molestiae, nobis
-          adipisci expedita sequi dignissimos quaerat nisi saepe laudantium
-          nihil nesciunt quidem consectetur! Culpa. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Cumque tenetur nisi nostrum, assumenda
-          accusantium minima dolorem consequuntur, itaque laboriosam deleniti,
-          non repudiandae tempora ex ut tempore inventore perspiciatis?
-          Distinctio, non!
-        </p>
-
+        <h1>My children</h1>
+        <ul className="projects-list-container">
+          {projects}
+        </ul>
         <Link to="/contact">
           <button className="call-action">Talk to me!</button>
         </Link>
