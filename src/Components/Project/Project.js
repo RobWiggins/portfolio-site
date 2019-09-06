@@ -25,7 +25,16 @@ export default class Project extends Component {
     return screenshotElems
   }
 
-  moveActiveScreenshot(increment) {}
+  moveActiveScreenshot(increment) {
+    let numScreenshots = this.props.project.screenshotFiles.length
+    if (increment > 0 && this.state.currScreenshotIdx + increment >= numScreenshots) {
+      this.setState({currScreenshotIdx: 0})
+    } else if (increment < 0 && this.state.currScreenshotIdx + increment < 0) {
+      this.setState({currScreenshotIdx: numScreenshots - 1})
+    } else {
+      this.setState({currScreenshotIdx: this.state.currScreenshotIdx + increment})
+    }
+  }
 
   render() {
     console.log('PROJECT: ', this.props.project)
