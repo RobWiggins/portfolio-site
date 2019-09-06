@@ -46,9 +46,12 @@ button {
 
 .sidebar {
   display: flex;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: linear-gradient(to right, 
   rgb(85, 134, 190),
   rgb(51, 75, 119),
@@ -66,8 +69,9 @@ button {
 }
 
 
-/* trying to get ul to stretch across whole menu bar */
 .menu-container {
+  position: sticky;
+  top: 0;
   display:flex;
   flex-direction: row;
   width: 60%;
@@ -222,7 +226,7 @@ main {
 .menu {
     grid-area: menu-container;
     align-self: stretch;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -244,6 +248,7 @@ main {
   .menu {
     grid-area: menu-container;
     align-self: stretch;
+    margin-top: 120px;
     height: 500px;
     padding: 20px;
     display: flex;
@@ -290,12 +295,21 @@ main {
   }
 
   .menu-container {
-    /* background: linear-gradient(to bottom, 
-      rgb(85, 134, 190),
-      rgb(51, 75, 119),
-      rgb(44, 39, 90)); */
-      /* padding-top: 3em; */
+    position: sticky;
+    top: 0;
+    display:flex;
+    flex-direction: row;
+    width: 60%;
+    /* background: linear-gradient(to right, 
+    rgb(85, 134, 190),
+    rgb(51, 75, 119),
+    rgb(44, 39, 90)); */
+    justify-content: space-evenly;
+    align-items: center;
   }
+  
+
+
 
   .content {
     text-align: left;
