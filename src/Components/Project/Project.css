@@ -9,6 +9,7 @@
 }
 
 .photo-area {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -55,6 +56,14 @@
   .project-screenshot {
     width: 70%;
     height: auto;
+    display: flex;
+    justify-self: center;
+  }
+
+  .carousel-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
