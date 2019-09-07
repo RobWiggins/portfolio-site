@@ -47,7 +47,7 @@ button {
 .sidebar {
   display: flex;
   position: sticky;
-  position: -webkit-sticky; /* Safari */
+  
   top: 0;
   flex-direction: row;
   justify-content: center;

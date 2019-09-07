@@ -1,0 +1,22 @@
+.contact-info {
+  margin: 3em;
+  margin-top: 2em;
+}
+
+p, a {
+  /* display: flex; */
+  flex-direction: column;
+  width: 65ch;
+}
+
+.hello-space-img {
+  box-shadow: 10px 10px 5px lightgray;
+  text-align: center;
+  margin: auto;
+  width: 300px;
+  margin-top: 30px;
+  height: auto;
+  /* text-align: center; */
+  /* margin: auto; */
+}
+

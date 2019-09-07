@@ -103,11 +103,7 @@ const projectData = [
         name: 'barometer_full.png',
         alt:
           'Barometer home search page, housing a tweet keyword query, emotion charts, and 20 matched tweets',
-      },
-      {
-        name: 'barometer_mobile_iphone8.png',
-        alt: 'Mobile responsive emotion charts',
-      },
+      }
     ],
   },
 ]

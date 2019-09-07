@@ -7,6 +7,31 @@
   padding-left: 0;
 }
 
+.btn-center-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.call-action-contact {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3em;
+  background: rgb(85, 134, 190);
+  padding: .5em 2em;
+  border-radius: 40px;
+  margin: 1em 0;
+  transition: .3s;
+  border: none;
+}
+
+.call-action-contact:hover {
+  box-shadow: 0 10px 50px rgba(188, 197, 216, 1);
+  cursor: pointer;
+}
+
 /*
  ! * DESKTOP FORMAT
 */

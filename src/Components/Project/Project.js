@@ -22,8 +22,12 @@ export default class Project extends Component {
         </li>
       )
     }
-    return screenshotElems
-  }
+    if (numScreenshots === 1) {
+      return ''
+    } else {
+      return screenshotElems 
+    }
+    }
 
   moveActiveScreenshot(increment) {
     let numScreenshots = this.props.project.screenshotFiles.length
@@ -53,7 +57,7 @@ export default class Project extends Component {
             this.props.project.screenshotFiles[this.state.currScreenshotIdx].alt
           }
         ></img>
-        <div className="carousel-btns">
+        { this.props.project.screenshotFiles.length !== 1 && <div className="carousel-btns">
           <button
             onClick={() => this.moveActiveScreenshot(-1)}
             className="carousel-nav-btn"
@@ -66,12 +70,16 @@ export default class Project extends Component {
           >
             Next &#10095;
           </button>
-        </div>
+        </div>}
         <ul className="scr-shots-num-holder">{screenshotElems}</ul>
         </div>
         <p className="project-description">
           {this.props.project.description}
         </p>
+        <div className='site-links'>
+          <button className="site-btn"><a href={this.props.project.demoLink} className="site-link" rel="noopener noreferrer" target="_blank">Visit Site</a></button>
+          <button className="site-btn"><a href={this.props.project.githubLink} className="site-link" rel="noopener noreferrer" target="_blank">Github</a></button>
+        </div>
       </div>
     )
   }

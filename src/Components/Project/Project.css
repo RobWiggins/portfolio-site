@@ -47,9 +47,34 @@
   font-size: 1em;
   margin: 10px;
   margin-bottom: 5px;
+  cursor: pointer;
+  outline: none;
 }
 
-/*
+.site-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px;
+}
+
+.site-btn {
+  margin: 10px;
+  width: 130px;
+  border-radius: 10px;
+  outline: none;
+  background-color: floralwhite;
+  cursor: pointer;
+}
+
+.site-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+/* 
  ! * DESKTOP FORMAT
 */
 @media (min-width: 1040px) {

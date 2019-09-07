@@ -8,8 +8,6 @@ import './Portfolio.css'
 export default class Portfolio extends Component {
   
 
-
-  
   render() {
 
     let projects = projectData.map( (project, idx) => {
@@ -22,9 +20,11 @@ export default class Portfolio extends Component {
         <ul className="projects-list-container">
           {projects}
         </ul>
+        <div className="btn-center-container">
         <Link to="/contact">
-          <button className="call-action">Talk to me!</button>
+          <button className="call-action-contact">Contact me!</button>
         </Link>
+        </div>
       </section>
     )
   }
