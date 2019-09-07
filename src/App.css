@@ -314,6 +314,7 @@ main {
   .content {
     text-align: left;
     padding: 3em;
+    padding-top: 1.5em;
   }
 
   .headshot {

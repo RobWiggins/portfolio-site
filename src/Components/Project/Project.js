@@ -41,8 +41,6 @@ export default class Project extends Component {
   }
 
   render() {
-    console.log('PROJECT: ', this.props.project)
-
     // build numbered boxes that light up and indicate which screenshot is active
     // and how many screenshots there are total
     let screenshotElems = this.generateScreenshotNums()

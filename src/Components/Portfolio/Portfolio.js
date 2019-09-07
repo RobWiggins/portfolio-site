@@ -6,7 +6,6 @@ import projectData from '../../projectData'
 import './Portfolio.css'
 
 export default class Portfolio extends Component {
-  
 
   render() {
 
