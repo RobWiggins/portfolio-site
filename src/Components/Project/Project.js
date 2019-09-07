@@ -50,6 +50,9 @@ export default class Project extends Component {
     // and how many screenshots there are total
     let screenshotElems = this.generateScreenshotNums()
 
+    // generate tech stack list elements
+    let techList = this.props.project.tech.map((techItem, idx) => <li className="tech-item" key={idx}>{techItem}</li> )
+
     return (
       <div className="project-container">
         <h2 className="project-title">{this.props.project.title}</h2>
@@ -82,6 +85,7 @@ export default class Project extends Component {
           <ul className="scr-shots-num-holder">{screenshotElems}</ul>
         </div>
         <p className="project-description">{this.props.project.description}</p>
+        <ul className="tech-stack-list">{techList}</ul>
         <div className="site-links">
           <a
             href={this.props.project.demoLink}
