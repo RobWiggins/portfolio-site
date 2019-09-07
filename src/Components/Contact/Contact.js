@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import './Contact.css'
 
 export default class Contact extends Component {
@@ -43,7 +42,7 @@ export default class Contact extends Component {
             (@RobertWiggins)
           </a>.
         </p>
-        <img src='../../static/toys-3644073_1280.png' className="hello-space-img"></img>
+        <img src='../../static/toys-3644073_1280.png' className="hello-space-img" alt="cheery sketch of space creatures and hello greeting"></img>
       </section>
     )
   }

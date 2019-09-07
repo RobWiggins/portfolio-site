@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Project from '../Project/Project'
 import projectData from '../../projectData'
-import Sidebar from '../Sidebar/Sidebar'
 
 import './Portfolio.css'
 
