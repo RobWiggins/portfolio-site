@@ -13,7 +13,7 @@ export default class Footer extends Component {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src="../../static/social-1_logo-linkedin.svg" />
+              <img src="../../static/social-1_logo-linkedin.svg" alt="LinkedIn logo link" />
             </a>
           </li>
           <li key={2} className="icon">
@@ -22,12 +22,12 @@ export default class Footer extends Component {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src="../../static/social-1_logo-github.svg" />
+              <img src="../../static/social-1_logo-github.svg" alt="Github logo link" />
             </a>
           </li>
           <li key={3} className="icon">
           <a className="mail-link contact-link" href="mailto:wigginsro11@gmail.com">
-            <img src="../../static/iconfinder_mail_115714.svg" />
+            <img src="../../static/iconfinder_mail_115714.svg" alt="Email logo link"/>
           </a>
           </li>
         </ul>

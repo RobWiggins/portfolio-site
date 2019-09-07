@@ -7,7 +7,7 @@ export default class ContactRoute extends Component {
   render() {
     return (
       <div className="contact-pane">
-        <Contact></Contact>
+        <Contact handleNewRoute={this.props.handleNewRoute}></Contact>
       </div>
     )
   }

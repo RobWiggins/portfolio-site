@@ -8,17 +8,26 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import Footer from './Components/Footer/Footer';
 
 export default class App extends React.Component {
+  
+  state = {
+    activePageIdx: 0,
+  }
+
+  handleNewRouteRender = (activePageIdx) => {
+    this.setState({ activePageIdx: activePageIdx })
+  }
+  
   render() {
     return (
       <div className="container">
         <div className="sidebar">
-          <Sidebar />
+          <Sidebar handleNewRoute={ this.handleNewRouteRender } activePageIdx={this.state.activePageIdx} />
         </div>
         <main className="content">
           <Switch>
-            <Route exact component={AboutRoute} path="/" />
-            <Route component={PortfolioRoute} path="/portfolio" />
-            <Route component={ContactRoute} path="/contact" />
+            <Route exact render={props => <AboutRoute {...props} handleNewRoute={this.handleNewRouteRender} />} path="/" />
+            <Route render={props => <PortfolioRoute {...props} handleNewRoute={this.handleNewRouteRender} />} path="/portfolio" />
+            <Route render={props => <ContactRoute {...props} handleNewRoute={this.handleNewRouteRender} />} path="/contact" />
           </Switch>
         </main>
         <div className="footer">

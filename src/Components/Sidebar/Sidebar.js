@@ -3,21 +3,10 @@ import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 export default class Sidebar extends Component {
-  state = {
-    activePane: 0,
-  };
-
-  // TODO need to really be doing this based on the current route...
-  // TODO they can enter in the route manually...
-  // TODO also clicking the go to buttons in other components...
-
-  practiceLog() {
-    console.log('I hit a log!')
-  }
 
   handleClickLink = (e, idx) => {
     e.preventDefault();
-    this.setState({ activePane: idx });
+    this.props.handleNewRoute(idx);
   };
 
   generateNavLinks() {
@@ -42,7 +31,7 @@ export default class Sidebar extends Component {
           key={idx}
           onClick={e => this.handleClickLink(e, idx)}
         >
-          <Link className={`menu-item ${idx === this.state.activePane && 'current-page-nav'}`} to={link.path}>
+          <Link className={`menu-item ${idx === this.props.activePageIdx && 'current-page-nav'}`} to={link.path}>
             {link.linkName}
           </Link>
         </li>

@@ -4,7 +4,8 @@
 
 .portfolio-title {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: bold;
+  text-align: center;
 }
 
 .projects-list-container {

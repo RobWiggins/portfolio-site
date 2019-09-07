@@ -8,8 +8,11 @@ import './Portfolio.css'
 
 export default class Portfolio extends Component {
 
-  handleClick() {
-    Sidebar.setState({activePane: 2});
+  componentDidMount() {
+    // sets new active tab on sidebar styling
+    this.props.handleNewRoute(1)
+    // TODO fix inconsistent scrolling
+    window.scrollTo(0,0)
   }
 
   render() {

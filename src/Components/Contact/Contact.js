@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom'
 import './Contact.css'
 
 export default class Contact extends Component {
+
+  componentDidMount() {
+    // sets new active tab on sidebar styling
+    // TODO fix inconsistent scrolling behavior
+    window.scrollTo(0,0)
+    this.props.handleNewRoute(2)
+  }
+
   render() {
     return (
       <section className="contact-info">

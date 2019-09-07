@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 export default class About extends Component {
+
+  componentDidMount() {
+    // sets new active sidebar tab for notification styling
+    this.props.handleNewRoute(0)
+    window.scrollTo(0,0)
+  }
+
   render() {
     return (
       <section className="about-info">
@@ -11,17 +18,14 @@ export default class About extends Component {
           aria-hidden
           alt="Stunning headshot of Rob Wiggins."
         />
-        <h1 className="tagline">I'm Rob Wiggins and I love full-stack web development.</h1>
+        <h1 className="tagline">Rob Wiggins</h1>
+        <h1 className="vocation">Full stack web developer</h1>
         <h2 className="welcome-text">Welcome to my humble corner of the internet.</h2>
         <p className="summary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          deserunt, doloremque consequatur enim ducimus dolorum molestiae, nobis
-          adipisci expedita sequi dignissimos quaerat nisi saepe laudantium
-          nihil nesciunt quidem consectetur! Culpa. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Cumque tenetur nisi nostrum, assumenda
-          accusantium minima dolorem consequuntur, itaque laboriosam deleniti,
-          non repudiandae tempora ex ut tempore inventore perspiciatis?
-          Distinctio, non!
+          Hi, I'm Rob. I'm a full stack web developer with a background in corporate advisory and
+          investments. I’m a strong believer that tackling difficult endeavors and leaping from failure to failure 
+          with undiminished enthusiasm fosters peak performance and astonishing growth. Don’t take this too personally, but I hope to fail with you too. 
+          Then we can create something wonderful.
         </p>
         
         <Link to="/portfolio">

@@ -75,8 +75,8 @@ export default class Project extends Component {
           {this.props.project.description}
         </p>
         <div className='site-links'>
-          <button className="site-btn"><a href={this.props.project.demoLink} className="site-link" rel="noopener noreferrer" target="_blank">Visit Site</a></button>
-          <button className="site-btn"><a href={this.props.project.githubLink} className="site-link" rel="noopener noreferrer" target="_blank">Github</a></button>
+        <a href={this.props.project.demoLink} className="site-link" rel="noopener noreferrer" target="_blank"><button className="site-btn">Visit Site</button></a>
+        <a href={this.props.project.githubLink} className="site-link" rel="noopener noreferrer" target="_blank"><button className="site-btn">Github</button></a>
         </div>
       </div>
     )

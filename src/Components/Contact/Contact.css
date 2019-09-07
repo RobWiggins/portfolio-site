@@ -1,6 +1,7 @@
 .contact-header {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: bold;
+  text-align: center;
 }
 
 .hello-space-img {
@@ -14,6 +15,22 @@
   /* margin: auto; */
 }
 
+.contact-link,
+  .contact-para {
+    /* display: flex; */
+    flex-direction: column;
+    max-width: 65ch;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 @media (min-width: 1040px) {
   .contact-info {
     margin: 2em;
@@ -26,6 +43,7 @@
     /* display: flex; */
     flex-direction: column;
     max-width: 65ch;
+    line-height: 1.5;
   }
 
   .hello-space-img {

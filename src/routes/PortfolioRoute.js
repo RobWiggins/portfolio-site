@@ -7,7 +7,7 @@ export default class PortfolioRoute extends Component {
   render() {
     return (
       <div className="portfolio-pane">
-        <Portfolio></Portfolio>
+        <Portfolio handleNewRoute={this.props.handleNewRoute}></Portfolio>
       </div>
     )
   }
