@@ -2,6 +2,11 @@
  ! * Mobile/other Format
 */
 
+.portfolio-title {
+  font-size: 2em;
+  font-weight: 500;
+}
+
 .projects-list-container {
   list-style-type: none;
   padding-left: 0;

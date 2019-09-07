@@ -7,6 +7,14 @@ export default class Sidebar extends Component {
     activePane: 0,
   };
 
+  // TODO need to really be doing this based on the current route...
+  // TODO they can enter in the route manually...
+  // TODO also clicking the go to buttons in other components...
+
+  practiceLog() {
+    console.log('I hit a log!')
+  }
+
   handleClickLink = (e, idx) => {
     e.preventDefault();
     this.setState({ activePane: idx });

@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Project from '../Project/Project'
 import projectData from '../../projectData'
+import Sidebar from '../Sidebar/Sidebar'
 
 import './Portfolio.css'
 
 export default class Portfolio extends Component {
+
+  handleClick() {
+    Sidebar.setState({activePane: 2});
+  }
 
   render() {
 
@@ -15,7 +20,7 @@ export default class Portfolio extends Component {
 
     return (
       <section className="portfolio-info">
-        <h1>My children</h1>
+        <h1 className="portfolio-title">My children</h1>
         <ul className="projects-list-container">
           {projects}
         </ul>
