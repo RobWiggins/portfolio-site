@@ -66,20 +66,6 @@ button {
   list-style: none;
 }
 
-.menu-container {
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  /* background: linear-gradient(to right, 
-  rgb(85, 134, 190),
-  rgb(51, 75, 119),
-  rgb(44, 39, 90)); */
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .menu-links {
   display: flex;
   /* height: 60vh; */
@@ -215,7 +201,26 @@ main {
 .content,
 .menu-container,
 .footer {
-  padding: 1em;
+  padding: 15px;
+}
+
+/* 
+ * For now, a hacky precedence fix for having padding-top come after
+ * the other comprehensive mobile 15px padding above, to  only customize menu padding top
+*/
+.menu-container {
+  padding-top: 1em;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  /* background: linear-gradient(to right, 
+  rgb(85, 134, 190),
+  rgb(51, 75, 119),
+  rgb(44, 39, 90)); */
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* Contact formatting */
@@ -253,6 +258,12 @@ main {
       'sidebar footer';
     grid-template-columns: 200px 1fr;
     grid-template-rows: 1fr auto;
+  }
+
+  .content,
+  .menu-container,
+  .footer {
+    padding: 1em;
   }
 
   .menu {
