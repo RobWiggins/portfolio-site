@@ -61,6 +61,8 @@ export default class Project extends Component {
           <img
             className="project-screenshot"
             src={`../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].name}`}
+            srcSet={`../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].mobileName} ${this.props.project.screenshotFiles[this.state.currScreenshotIdx].mobileWidth},
+            ../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].name} 2800w`}
             alt={
               this.props.project.screenshotFiles[this.state.currScreenshotIdx]
                 .alt

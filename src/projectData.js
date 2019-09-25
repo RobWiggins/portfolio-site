@@ -25,21 +25,33 @@ const projectData = [
     ],
     screenshotFiles: [
       {
+        mobileName: 'SI_register_mobile_373w.jpg',
+        mobileWidth: '373w',
         name: 'SI_landing.jpg',
         alt: 'Stay Informed landing page with a welcome message',
       },
       {
+        mobileName: 'SI_dashboardrep_mobile_373w.jpg',
+        mobileWidth: '373w',
         name: 'SI_dashboard_reps.jpg',
         alt:
           'Stay Informed Dashboard page, holding representatives and district information',
       },
       {
+        mobileName: 'SI_dashboardnews_372w.jpg',
+        mobileWidth: '372w',
         name: 'SI_dashboard_news.jpg',
         alt:
           'News portion of dashboard that holds articles that mention your district representatives',
       },
-      { name: 'SI_mobile_shots.jpg', alt: 'mobile responsive screenshots' },
+      { 
+        mobileName: 'SI_search_mobile_372w.jpg',
+        mobileWidth: '372w',
+        name: 'SI_mobile_shots.jpg', 
+        alt: 'mobile responsive screenshots' },
       {
+        mobileName: 'SI_contributions_mobile_372w.jpg',
+        mobileWidth: '372w',
         name: 'SI_organization_contribs.jpg',
         alt: 'Highest organizational money contributions within a bar chart',
       },
@@ -65,16 +77,30 @@ const projectData = [
     ],
     screenshotFiles: [
       {
+        mobileName: '',
+        mobileWidth: '',
         name: 'SR_register.jpg',
         alt: 'Spaced Repetition register account page',
       },
       {
+        mobileName: '',
+        mobileWidth: '',
         name: 'SR_dashboard.jpg',
         alt:
           'Dashboard page which holds your word list and score for each word',
       },
-      { name: 'SR_apprende_word.jpg', alt: 'Word translation question page' },
-      { name: 'SR_answer_result.jpg', alt: 'Word translation answer feedback' },
+      { 
+        mobileName: '',
+        mobileWidth: '',
+        name: 'SR_apprende_word.jpg', 
+        alt: 'Word translation question page' 
+      },
+      { 
+        mobileName: '',
+        mobileWidth: '',
+        name: 'SR_answer_result.jpg', 
+        alt: 'Word translation answer feedback' 
+      },
     ],
   },
   {
@@ -100,6 +126,8 @@ const projectData = [
     ],
     screenshotFiles: [
       {
+        mobileName: '',
+        mobileWidth: '',
         name: 'barometer_full.png',
         alt:
           'Barometer home search page, housing a tweet keyword query, emotion charts, and 20 matched tweets',
