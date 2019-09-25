@@ -17,12 +17,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 
 .project-screenshot {
-  width: 100%;
+  width: 90%;
   height: auto;
   box-shadow: 7px 7px 5px lightgray;
+}
+
+.picture-holder {
+  text-align: center;
+  margin: auto;
 }
 
 .scr-shots-num-holder {
@@ -107,10 +113,17 @@
 */
 @media (min-width: 1040px) {
   .project-screenshot {
-    width: 70%;
+    width: 85%;
     height: auto;
+    /* display: flex;
+    justify-self: center; */
+  }
+
+  .photo-area {
     display: flex;
-    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .carousel-btns {

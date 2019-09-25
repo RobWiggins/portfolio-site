@@ -58,16 +58,18 @@ export default class Project extends Component {
         <h2 className="project-title">{this.props.project.title}</h2>
 
         <div className="photo-area">
-          <img
-            className="project-screenshot"
-            src={`../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].name}`}
-            srcSet={`../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].mobileName} ${this.props.project.screenshotFiles[this.state.currScreenshotIdx].mobileWidth},
-            ../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].name} 2800w`}
-            alt={
+          <picture className="picture-holder">
+            <source className="project-screenshot" srcSet={`../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].name}`} media="(min-width: 768px)" alt={
+              this.props.project.screenshotFiles[this.state.currScreenshotIdx]
+                .alt}/>
+            <source className="project-screenshot" srcSet={`../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].mobileName}`} media="(max-width: 769px)" alt={
+              this.props.project.screenshotFiles[this.state.currScreenshotIdx]
+                .alt} />
+            <img className="project-screenshot" src={`../../static/${this.props.project.screenshotFiles[this.state.currScreenshotIdx].name}`} alt={
               this.props.project.screenshotFiles[this.state.currScreenshotIdx]
                 .alt
-            }
-          ></img>
+            }></img>
+          </picture>
           {this.props.project.screenshotFiles.length !== 1 && (
             <div className="carousel-btns">
               <button

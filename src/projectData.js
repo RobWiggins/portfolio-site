@@ -77,28 +77,28 @@ const projectData = [
     ],
     screenshotFiles: [
       {
-        mobileName: '',
+        mobileName: 'SR_register_mobile.jpg',
         mobileWidth: '',
-        name: 'SR_register.jpg',
+        name: 'SR_register_desktop.jpg',
         alt: 'Spaced Repetition register account page',
       },
       {
-        mobileName: '',
+        mobileName: 'SR_dashboard_mobile_408w.jpg',
         mobileWidth: '',
-        name: 'SR_dashboard.jpg',
+        name: 'SR_dashboard_desktop.jpg',
         alt:
           'Dashboard page which holds your word list and score for each word',
       },
       { 
-        mobileName: '',
+        mobileName: 'SR_learn_mobile_409w.jpg',
         mobileWidth: '',
-        name: 'SR_apprende_word.jpg', 
+        name: 'SR_learn_desktop.jpg', 
         alt: 'Word translation question page' 
       },
       { 
-        mobileName: '',
+        mobileName: 'SR_answer_mobile_409w.jpg',
         mobileWidth: '',
-        name: 'SR_answer_result.jpg', 
+        name: 'SR_answer_desktop.jpg', 
         alt: 'Word translation answer feedback' 
       },
     ],
@@ -126,7 +126,7 @@ const projectData = [
     ],
     screenshotFiles: [
       {
-        mobileName: '',
+        mobileName: 'barometer_emotions_mobile_406w.jpg',
         mobileWidth: '',
         name: 'barometer_full.png',
         alt:
