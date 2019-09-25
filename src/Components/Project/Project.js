@@ -93,19 +93,19 @@ export default class Project extends Component {
         <div className="site-links">
           <a
             href={this.props.project.demoLink}
-            className="site-link"
+            className="site-btn"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <button className="site-btn">Visit Site</button>
+            Visit Site
           </a>
           <a
             href={this.props.project.githubLink}
-            className="site-link"
+            className="site-btn"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <button className="site-btn">Github</button>
+            Github
           </a>
         </div>
       </div>

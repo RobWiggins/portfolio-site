@@ -129,6 +129,26 @@ button {
   line-height: 1.6em;
 }
 
+.action-link-text {
+  font-family: 'Arial', 'Open Sans', 'Nunito', 'Roboto', 'sans-serif';
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  background: rgb(85, 134, 190);
+  padding: 0.5em 2em;
+  border-radius: 40px;
+  margin: 1.3em 0;
+  transition: 0.3s;
+  border: none;
+}
+
+.action-link-text:hover {
+box-shadow: 0 10px 50px rgba(188, 197, 216, 1);
+cursor: pointer;
+}
+/* 
 .call-action {
   display: inline-block;
   text-decoration: none;
@@ -146,7 +166,7 @@ button {
 .call-action:hover {
   box-shadow: 0 10px 50px rgba(188, 197, 216, 1);
   cursor: pointer;
-}
+} */
 
 /* 
  TODO

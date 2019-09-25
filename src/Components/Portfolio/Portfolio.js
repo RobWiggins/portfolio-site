@@ -10,7 +10,6 @@ export default class Portfolio extends Component {
   componentDidMount() {
     // sets new active tab on sidebar styling
     this.props.handleNewRoute(1)
-    // TODO fix inconsistent scrolling
     window.scrollTo(0,0)
   }
 
@@ -27,9 +26,7 @@ export default class Portfolio extends Component {
           {projects}
         </ul>
         <div className="btn-center-container">
-        <Link to="/contact">
-          <button className="call-action-contact">Contact me!</button>
-        </Link>
+        <Link className="action-link-text" to="/contact">Contact me!</Link>
         </div>
       </section>
     )

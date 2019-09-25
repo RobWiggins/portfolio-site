@@ -25,6 +25,12 @@
     text-decoration: none;
   }
 
+  .contact-para {
+    padding-left: 1em;
+    padding-right: 1em;
+
+  }
+
   .contact-info {
     display: flex;
     flex-direction: column;
