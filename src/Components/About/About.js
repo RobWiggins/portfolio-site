@@ -18,15 +18,15 @@ export default class About extends Component {
           alt="Stunning headshot of Rob Wiggins."
         />
         <h1 className="tagline">Rob Wiggins</h1>
-        <h1 className="vocation">Full stack web developer</h1>
+        <h1 className="vocation">Full Stack Software Engineer</h1>
         <h2 className="welcome-text">
           Welcome to my humble corner of the internet.
         </h2>
         <p className="summary">
-          Hi, I'm Rob. I'm a full stack web developer with a background in
+          Hi, I'm Rob. I'm a full stack software engineer with a background in
           corporate advisory and investments. I’m a strong believer that
-          tackling difficult endeavors and leaping from failure to failure with
-          undiminished enthusiasm fosters peak performance and astonishing
+          tackling the most difficult endeavors and leaping from failure to failure with
+          undiminished enthusiasm fosters the greatest performance and astonishing
           growth. Don’t take this too personally, but I hope to fail with you
           too. Then we can create something wonderful.
         </p>
