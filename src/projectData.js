@@ -77,29 +77,35 @@ const projectData = [
     ],
     screenshotFiles: [
       {
-        mobileName: 'SR_register_mobile.jpg',
-        mobileWidth: '',
-        name: 'SR_register_desktop.jpg',
+        mobileName: 'spaced-repetition-smaller-width-register-account.png',
+        mobileWidth: '974w',
+        name: 'spaced-repetition-register-account.png',
         alt: 'Spaced Repetition register account page',
       },
       {
-        mobileName: 'SR_dashboard_mobile_408w.jpg',
-        mobileWidth: '',
-        name: 'SR_dashboard_desktop.jpg',
+        mobileName: 'spaced-repetition-smaller-width-dashboard.png',
+        mobileWidth: '836w',
+        name: 'spaced-repetition-dashboard.png',
         alt:
           'Dashboard page which holds your word list and score for each word',
       },
       { 
-        mobileName: 'SR_learn_mobile_409w.jpg',
-        mobileWidth: '',
-        name: 'SR_learn_desktop.jpg', 
+        mobileName: 'spaced-repetition-smaller-width-question.png',
+        mobileWidth: '930w',
+        name: 'spaced-repetition-question.png', 
         alt: 'Word translation question page' 
       },
       { 
-        mobileName: 'SR_answer_mobile_409w.jpg',
-        mobileWidth: '',
-        name: 'SR_answer_desktop.jpg', 
-        alt: 'Word translation answer feedback' 
+        mobileName: 'spaced-repetition-smaller-width-correct.png',
+        mobileWidth: '920w',
+        name: 'spaced-repetition-correct.png', 
+        alt: 'Correct word translation answer feedback' 
+      },
+      { 
+        mobileName: 'spaced-repetition-smaller-width-wrong.png',
+        mobileWidth: '924w',
+        name: 'spaced-repetition-wrong.png', 
+        alt: 'Incorrect word translation answer feedback' 
       },
     ],
   },
