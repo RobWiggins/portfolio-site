@@ -5,7 +5,6 @@ import './Sidebar.css';
 export default class Sidebar extends Component {
 
   handleClickLink = (e, idx) => {
-    e.preventDefault();
     this.props.handleNewRoute(idx);
   };
 
@@ -31,7 +30,7 @@ export default class Sidebar extends Component {
           key={idx}
           onClick={e => this.handleClickLink(e, idx)}
         >
-          <Link className={`menu-item ${idx === this.props.activePageIdx && 'current-page-nav'}`} to={link.path}>
+          <Link className={`menu-item ${idx === this.props.activePageIdx ? 'current-page-nav' : ''}`} to={link.path}>
             {link.linkName}
           </Link>
         </li>
@@ -43,6 +42,9 @@ export default class Sidebar extends Component {
     let navLinkElems = this.generateNavLinks();
     return (
       <div className="menu-container">
+        <Link className="brand-mark" to="/" onClick={e => this.handleClickLink(e, 0)}>
+          RW
+        </Link>
         <nav className="menu">
           <ul className="menu-links">{navLinkElems}</ul>
         </nav>

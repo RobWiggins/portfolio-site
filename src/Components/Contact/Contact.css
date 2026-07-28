@@ -1,65 +1,77 @@
+.contact-info {
+  min-height: calc(100vh - 170px);
+  display: grid;
+  gap: 30px;
+  align-items: center;
+  text-align: left;
+}
+
+.contact-copy {
+  max-width: 700px;
+  padding-inline: clamp(16px, 3vw, 44px);
+}
+
 .contact-header {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
+  margin: 0;
+  color: var(--ink);
+  font-size: 2.7rem;
+  line-height: 1.08;
+  font-weight: 900;
+  letter-spacing: 0;
 }
 
-.hello-space-img {
-  box-shadow: 10px 10px 5px lightgray;
-  text-align: center;
-  margin: auto;
-  width: 300px;
-  margin-top: 30px;
-  height: auto;
-  /* text-align: center; */
-  /* margin: auto; */
+.contact-para {
+  max-width: 680px;
+  margin: 18px 0 0;
+  color: var(--copy);
+  font-size: clamp(1.12rem, 1.06rem + 0.22vw, 1.2rem);
+  line-height: 1.8;
+  font-weight: 500;
 }
 
-.contact-link,
-  .contact-para {
-    /* display: flex; */
-    flex-direction: column;
-    max-width: 65ch;
-    line-height: 1.5;
-    text-align: left;
-    text-decoration: none;
+.contact-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-card {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 16px 42px rgba(20, 27, 45, 0.09);
+}
+
+.contact-card span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.contact-link {
+  color: var(--blue-dark);
+  font-size: 1.05rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .contact-header {
+    font-size: 3.45rem;
   }
+}
 
-  .contact-para {
-    padding-left: 1em;
-    padding-right: 1em;
-
-  }
-
+@media (min-width: 960px) {
   .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-@media (min-width: 1040px) {
-  .contact-info {
-    margin: 2em;
-    margin-top: .3em;
-    margin-bottom: .5em;
-  }
-
-  .contact-link,
-  .contact-para {
-    /* display: flex; */
-    flex-direction: column;
-    max-width: 65ch;
-    line-height: 1.5;
-  }
-
-  .hello-space-img {
-    box-shadow: 10px 10px 5px lightgray;
-    text-align: center;
-    margin: auto;
-    width: 300px;
-    margin-top: 30px;
-    height: auto;
-    /* text-align: center; */
-    /* margin: auto; */
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
   }
 }

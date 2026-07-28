@@ -1,5 +1,117 @@
+.about-info {
+  display: grid;
+  gap: 36px;
+  align-items: center;
+  text-align: left;
+}
+
+.hero-copy {
+  max-width: 720px;
+  padding-inline: clamp(16px, 3vw, 44px);
+}
+
+.tagline {
+  margin: 0;
+  color: var(--ink);
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.vocation {
+  margin: 20px 0 0;
+  max-width: 720px;
+  color: var(--ink);
+  font-size: 1.65rem;
+  line-height: 1.22;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.summary {
+  max-width: 680px;
+  margin: 22px 0 0;
+  color: var(--copy);
+  font-size: clamp(1.12rem, 1.05rem + 0.28vw, 1.22rem);
+  line-height: 1.82;
+  font-weight: 500;
+}
+
+.hero-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-panel {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(238, 244, 255, 0.8), rgba(255, 255, 255, 0.92)),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
 .headshot {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 1;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 16px 40px rgba(20, 27, 45, 0.16);
+}
+
+.hero-highlights {
+  margin: 22px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  list-style: none;
+}
+
+.hero-highlights li {
+  padding: 14px;
+  border: 1px solid rgba(20, 27, 45, 0.08);
+  border-radius: 8px;
+  color: var(--copy);
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 1rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.hero-highlights span {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .tagline {
+    font-size: 4.8rem;
+  }
+
+  .vocation {
+    font-size: 2.1rem;
+  }
+}
+
+@media (min-width: 1040px) {
+  .content > .about-info {
+    max-width: 1280px;
+  }
+
+  .about-info {
+    min-height: calc(100vh - 170px);
+    grid-template-columns: minmax(0, 1fr) minmax(460px, 0.95fr);
+  }
 }

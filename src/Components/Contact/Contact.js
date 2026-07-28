@@ -11,57 +11,49 @@ export default class Contact extends Component {
   render() {
     return (
       <section className="contact-info">
-        <h1 className="contact-header">Contact Me</h1>
-        <p className="contact-para">
-          Thanks for taking the time to learn more about me. I'm currently 
-          looking for new roles primarily in software development but am 
-          also open to opportunities in business. I have 3 years of 
-          experience as a Full Stack Software Engineer at a financial technology
-          company.
+        <div className="contact-copy">
+          <p className="eyebrow">Contact</p>
+          <h1 className="contact-header">Let's build something useful.</h1>
+          <p className="contact-para">
+            I am currently open to new software engineering roles and opportunities.
+            I would love to connect or catch up.  I can be reached via any of the following
+            methods.
+          </p>
+        </div>
 
-          I would love to connect and stay in touch. I can be reached at{' '}
-          <a
-            className="mail-link contact-link"
-            href="mailto:wigginsro11@gmail.com"
-          >
-            wigginsro11@gmail.com
-          </a>
-          .
-        </p>
-        <p className="contact-para">
-          You can learn more about me by visiting my{' '}
-          <a
-            className="contact-link"
-            href="https://www.linkedin.com/in/robert-wiggins-7782b071/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            LinkedIn
-          </a>{' '}
-          and{' '}
-          <a
-            className="contact-link"
-            href="https://github.com/RobWiggins"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Github
-          </a>{' '}
-          <a
-            className="contact-link"
-            href="https://github.com/RobWiggins"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            (@RobWiggins)
-          </a>
-          .
-        </p>
-        <img
-          src="../../static/toys-3644073_1280.png"
-          className="hello-space-img"
-          alt="cheery sketch of space creatures and hello greeting"
-        ></img>
+        <div className="contact-panel">
+          <div className="contact-card">
+            <span>Email</span>
+            <a
+              className="contact-link"
+              href="mailto:wigginsro11@gmail.com"
+            >
+              wigginsro11@gmail.com
+            </a>
+          </div>
+          <div className="contact-card">
+            <span>LinkedIn</span>
+            <a
+              className="contact-link"
+              href="https://www.linkedin.com/in/robert-wiggins-7782b071/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Robert Wiggins
+            </a>
+          </div>
+          <div className="contact-card">
+            <span>GitHub</span>
+            <a
+              className="contact-link"
+              href="https://github.com/RobWiggins"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              @RobWiggins
+            </a>
+          </div>
+        </div>
       </section>
     )
   }
