@@ -13,10 +13,13 @@ export default class Contact extends Component {
       <section className="contact-info">
         <h1 className="contact-header">Talk with me! Maybe!</h1>
         <p className="contact-para">
-          Thanks for taking the time to learn more about me. I'm currently
-          working in the Financial Technology industry as an Associate Software
-          Engineer at States Title in Durham, NC. I would love to connect and
-          stay in touch. I can be reached at{' '}
+          Thanks for taking the time to learn more about me. I'm currently 
+          looking for new roles primarily in software development but am 
+          also open to opportunities in business. I have 3 years of 
+          experience as a Full Stack Software Engineer at a financial technology
+          company.
+
+          I would love to connect and stay in touch. I can be reached at{' '}
           <a
             className="mail-link contact-link"
             href="mailto:wigginsro11@gmail.com"
@@ -38,7 +41,7 @@ export default class Contact extends Component {
           and{' '}
           <a
             className="contact-link"
-            href="https://github.com/RobertWiggins"
+            href="https://github.com/RobWiggins"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -46,11 +49,11 @@ export default class Contact extends Component {
           </a>{' '}
           <a
             className="contact-link"
-            href="https://github.com/RobertWiggins"
+            href="https://github.com/RobWiggins"
             rel="noopener noreferrer"
             target="_blank"
           >
-            (@RobertWiggins)
+            (@RobWiggins)
           </a>
           .
         </p>

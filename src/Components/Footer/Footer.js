@@ -20,7 +20,7 @@ export default class Footer extends Component {
           </li>
           <li key={2} className="icon">
             <a
-              href="https://github.com/RobertWiggins"
+              href="https://github.com/RobWiggins"
               rel="noopener noreferrer"
               target="_blank"
             >
