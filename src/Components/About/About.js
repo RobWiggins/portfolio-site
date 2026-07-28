@@ -11,31 +11,44 @@ export default class About extends Component {
   render() {
     return (
       <section className="about-info">
-        <img
-          className="headshot"
-          src="../../static/cropped_headshot_1.jpeg"
-          aria-hidden
-          alt="Stunning headshot of Rob Wiggins."
-        />
-        <h1 className="tagline">Rob Wiggins</h1>
-        <h1 className="vocation">Full Stack Software Engineer</h1>
-        <h2 className="welcome-text">
-          Welcome to my humble corner of the internet.
-        </h2>
-        <p className="summary">
-          Hi, I'm Rob. I'm a full stack software engineer with a background in
-          corporate advisory and investments. I’m a strong believer that
-          tackling the most difficult endeavors and leaping from failure to failure with
-          undiminished enthusiasm fosters the greatest performance and astonishing
-          growth. Don’t take this too personally, but I hope to fail with you
-          too. Then we can create something wonderful.
-        </p>
-
-        <Link className="action-link-text" to="/portfolio">Check out my work</Link>
-
-        {/* <Link to="/portfolio">
-          <button className="call-action">Check out my work</button>
-        </Link> */}
+        <div className="hero-copy">
+          <p className="eyebrow">Product-minded full-stack engineer</p>
+          <h1 className="tagline">Rob Wiggins</h1>
+          <h2 className="vocation">
+            I build thoughtful web products with a sharp eye for business context.
+          </h2>
+          <p className="summary">
+            I am a full-stack software engineer with experience in financial
+            technology, corporate advisory, and investments. I like turning
+            fuzzy problems into clear interfaces, reliable systems, and product
+            decisions that people can understand.
+          </p>
+          <div className="hero-actions">
+            <Link className="action-link-text" to="/portfolio">View projects</Link>
+            <Link className="secondary-action-link" to="/contact">Contact me</Link>
+          </div>
+        </div>
+        <aside className="hero-panel" aria-label="Rob Wiggins portfolio highlights">
+          <img
+            className="headshot"
+            src="../../static/cropped_headshot_1.jpeg"
+            alt="Rob Wiggins"
+          />
+          <ul className="hero-highlights">
+            <li>
+              <span>Focus</span>
+              Full-stack product engineering
+            </li>
+            <li>
+              <span>Experience</span>
+              Fintech and data-informed interfaces
+            </li>
+            <li>
+              <span>Approach</span>
+              Practical systems, polished user flows
+            </li>
+          </ul>
+        </aside>
       </section>
     )
   }

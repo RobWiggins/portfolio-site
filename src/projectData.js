@@ -7,8 +7,8 @@ const projectData = [
     uncovering representative-specific financial incentives that may influence policy, and monitoring recent actions 
     to verify they are representing your interests.`,
     demoLink: 'https://stayinformed.now.sh',
-    githubLink: 'https://github.com/RobertWiggins/stay-informed-client',
-    sourceCodeSide: 'front',
+    githubLink: 'https://github.com/RobWiggins/stay-informed-api',
+    sourceCodeSide: 'back',
     tech: [
       'React',
       'Node.js',

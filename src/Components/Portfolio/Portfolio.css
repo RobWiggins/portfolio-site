@@ -1,47 +1,78 @@
-/* 
- ! * Mobile/other Format
-*/
+.portfolio-info {
+  text-align: left;
+}
 
-.portfolio-title {
-  font-size: 2em;
-  font-weight: bold;
+.section-intro {
+  max-width: 760px;
+  margin: 0 auto 54px;
   text-align: center;
 }
 
+.portfolio-title {
+  margin: 0;
+  color: var(--ink);
+  font-size: 2.55rem;
+  line-height: 1.08;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.portfolio-subtitle {
+  max-width: 680px;
+  margin: 18px auto 0;
+  color: var(--copy);
+  font-size: clamp(1.12rem, 1.06rem + 0.22vw, 1.2rem);
+  line-height: 1.75;
+  font-weight: 500;
+}
+
 .projects-list-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  gap: 56px;
   list-style-type: none;
-  padding-left: 0;
+}
+
+.project-li {
+  margin: 0;
 }
 
 .btn-center-container {
+  margin: 48px 0 clamp(42px, 7vw, 72px);
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
-.call-action-contact {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  font-size: 1.3em;
-  background: rgb(85, 134, 190);
-  padding: .5em 2em;
-  border-radius: 40px;
-  margin: 1em 0;
-  transition: .3s;
-  border: none;
+.portfolio-contact-cta {
+  min-height: 62px;
+  padding: 0 28px;
+  gap: 12px;
+  font-weight: 900;
+  box-shadow: 0 18px 40px rgba(47, 111, 228, 0.26);
 }
 
-.call-action-contact:hover {
-  box-shadow: 0 10px 50px rgba(188, 197, 216, 1);
-  cursor: pointer;
+.portfolio-contact-text {
+  font-size: 1.7rem;
 }
 
-/*
- ! * DESKTOP FORMAT
-*/
-@media (min-width: 1040px) {
-  
+.portfolio-contact-arrow {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 1.18rem;
+  font-weight: 900;
+  line-height: 1;
 }
 
+@media (min-width: 768px) {
+  .portfolio-title {
+    font-size: 3.5rem;
+  }
+}
