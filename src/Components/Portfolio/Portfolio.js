@@ -21,7 +21,7 @@ export default class Portfolio extends Component {
 
     return (
       <section className="portfolio-info">
-        <h1 className="portfolio-title">My children</h1>
+        <h1 className="portfolio-title">Selected Work</h1>
         <ul className="projects-list-container">
           {projects}
         </ul>

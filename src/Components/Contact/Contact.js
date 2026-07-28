@@ -11,7 +11,7 @@ export default class Contact extends Component {
   render() {
     return (
       <section className="contact-info">
-        <h1 className="contact-header">Talk with me! Maybe!</h1>
+        <h1 className="contact-header">Contact Me</h1>
         <p className="contact-para">
           Thanks for taking the time to learn more about me. I'm currently 
           looking for new roles primarily in software development but am 
