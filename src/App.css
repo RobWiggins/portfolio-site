@@ -110,9 +110,13 @@ a:focus-visible {
 .menu-links {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 22px;
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  border: 1px solid rgba(20, 27, 45, 0.1);
+  border-radius: 8px;
+  background: rgba(245, 247, 251, 0.88);
+  box-shadow: 0 10px 26px rgba(20, 27, 45, 0.08);
 }
 
 .li-link-nav {
@@ -122,34 +126,48 @@ a:focus-visible {
 .menu-item {
   display: inline-flex;
   align-items: center;
-  min-height: 42px;
-  padding: 0 14px;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 30px;
+  border: 1px solid transparent;
   border-radius: 8px;
-  color: var(--muted);
+  color: var(--copy);
   text-decoration: none;
-  font-size: 0.96rem;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 900;
   transition:
     background 160ms ease,
     color 160ms ease,
-    box-shadow 160ms ease;
+    box-shadow 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
 }
 
-.current-page-nav,
 .menu-item:hover {
   color: var(--blue-dark);
-  background: var(--surface-soft);
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(47, 111, 228, 0.18);
 }
 
 .current-page-nav {
-  box-shadow: inset 0 0 0 1px rgba(47, 111, 228, 0.12);
+  color: var(--blue-dark);
+  background: rgba(47, 111, 228, 0.34);
+  border-color: rgba(47, 111, 228, 0.42);
+  box-shadow: 0 9px 20px rgba(47, 111, 228, 0.16);
+}
+
+.current-page-nav:hover {
+  color: var(--blue-dark);
+  background: rgba(47, 111, 228, 0.44);
+  border-color: rgba(47, 111, 228, 0.5);
 }
 
 .eyebrow {
-  margin: 0 0 14px;
+  margin: 14 0 14px;
+  padding-bottom: 30px;
   color: var(--blue-dark);
-  font-size: 0.82rem;
-  font-weight: 900;
+  font-size: 2rem;
+  font-weight: 1200;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -255,10 +273,16 @@ a:focus-visible {
 
   .menu-links {
     justify-content: space-between;
+    gap: 8px;
+  }
+
+  .li-link-nav {
+    flex: 1;
   }
 
   .menu-item {
-    padding: 0 10px;
-    font-size: 0.9rem;
+    width: 100%;
+    padding: 0 8px;
+    font-size: 0.92rem;
   }
 }

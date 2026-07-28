@@ -12,7 +12,7 @@ export default class About extends Component {
     return (
       <section className="about-info">
         <div className="hero-copy">
-          <p className="eyebrow">Full Stack Software Engineer</p>
+          <h2 className="vocation eyebrow">Full Stack Software Engineer</h2>
           <h1 className="tagline">Robert Wiggins</h1>
           <h2 className="vocation">
             I build thoughtful web products with a sharp eye for business context.
