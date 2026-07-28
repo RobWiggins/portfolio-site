@@ -72,8 +72,8 @@ a:focus-visible {
 
 .menu-container {
   width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   padding: 14px 20px;
   display: flex;
   align-items: center;

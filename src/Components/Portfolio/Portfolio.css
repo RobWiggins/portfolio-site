@@ -5,6 +5,7 @@
 .section-intro {
   max-width: 760px;
   margin: 0 auto 54px;
+  padding-top: clamp(24px, 5vw, 54px);
   text-align: center;
 }
 

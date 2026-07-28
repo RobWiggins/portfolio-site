@@ -22,11 +22,11 @@ export default class Portfolio extends Component {
     return (
       <section className="portfolio-info">
         <div className="section-intro">
-          <p className="eyebrow">Selected work</p>
-          <h1 className="portfolio-title">Products with a point of view</h1>
+          <h1 className="portfolio-title">Selected Work</h1>
           <p className="portfolio-subtitle">
             A few projects that show how I approach full-stack systems,
-            user-facing workflows, and data-rich interfaces.
+            third-party API integrations, user-facing workflows, and data-rich
+            interfaces.
           </p>
         </div>
         <ul className="projects-list-container">

@@ -12,16 +12,16 @@ export default class About extends Component {
     return (
       <section className="about-info">
         <div className="hero-copy">
-          <p className="eyebrow">Product-minded full-stack engineer</p>
-          <h1 className="tagline">Rob Wiggins</h1>
+          <p className="eyebrow">Full Stack Software Engineer</p>
+          <h1 className="tagline">Robert Wiggins</h1>
           <h2 className="vocation">
             I build thoughtful web products with a sharp eye for business context.
           </h2>
           <p className="summary">
-            I am a full-stack software engineer with experience in financial
-            technology, corporate advisory, and investments. I like turning
-            fuzzy problems into clear interfaces, reliable systems, and product
-            decisions that people can understand.
+            I am a full stack software engineer with experience in financial
+            technology, corporate advisory, and investments. I find immense joy
+            in building things. I'm most inspired when building products that create
+            meaningful value in people's lives.
           </p>
           <div className="hero-actions">
             <Link className="action-link-text" to="/portfolio">View projects</Link>
@@ -37,15 +37,18 @@ export default class About extends Component {
           <ul className="hero-highlights">
             <li>
               <span>Focus</span>
-              Full-stack product engineering
+              Full Stack Software Engineer with a lean towards backend
+            </li>
+            <li>
+              <span>Skills</span>
+              TypeScript, Node.js, React, PostgreSQL, RESTful APIs, third-party integrations
             </li>
             <li>
               <span>Experience</span>
-              Fintech and data-informed interfaces
-            </li>
-            <li>
-              <span>Approach</span>
-              Practical systems, polished user flows
+                Most recently, worked 3 years as a Full Stack Software Engineer at
+                a financial techology company. Spent 3 years working in finance/investments
+                prior to that role. Possess a B.S. in Business Administration w/ concentrations
+                in Corporate Finance and Investments from UNC Chapel Hill.
             </li>
           </ul>
         </aside>

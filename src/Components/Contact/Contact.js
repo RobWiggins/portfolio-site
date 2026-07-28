@@ -15,9 +15,9 @@ export default class Contact extends Component {
           <p className="eyebrow">Contact</p>
           <h1 className="contact-header">Let's build something useful.</h1>
           <p className="contact-para">
-            I am open to software engineering roles and product-minded teams
-            where full-stack execution, business context, and clear user
-            experiences matter.
+            I am currently open to new software engineering roles and opportunities.
+            I would love to connect or catch up.  I can be reached via any of the following
+            methods.
           </p>
         </div>
 
