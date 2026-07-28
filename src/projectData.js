@@ -126,12 +126,20 @@ const projectData = [
     ],
     screenshotFiles: [
       {
-        mobileName: 'barometer_emotions_mobile_406w.jpg',
-        mobileWidth: '',
-        name: 'barometer_full.png',
+        mobileName: 'barometer-charts-smaller-width.png',
+        mobileWidth: '1132w',
+        name: 'barometer-history-query.png',
         alt:
-          'Barometer home search page, housing a tweet keyword query, emotion charts, and 20 matched tweets',
-      }
+          'Barometer results page with a highlighted past search term and updated tweet emotion charts',
+      },
+      {
+        mobileName: 'barometer-smaller-width-query-posts.png',
+        mobileWidth: '1104w',
+        name: 'barometer-search-query.png',
+        alt:
+          'Barometer search results page showing a flower query, matched tweets, and emotion charts',
+      },
+
     ],
   },
 ]
