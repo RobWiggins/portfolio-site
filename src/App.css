@@ -25,7 +25,11 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background: var(--bg);
+  background:
+    radial-gradient(1100px 650px at 8% 0%, rgba(47, 111, 228, 0.33), transparent 61%),
+    radial-gradient(1000px 600px at 100% 4%, rgba(31, 157, 122, 0.26), transparent 56%),
+    var(--bg);
+  background-attachment: fixed;
   font-family: 'Nunito', 'Open Sans', 'Roboto', sans-serif;
 }
 
