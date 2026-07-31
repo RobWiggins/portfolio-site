@@ -6,8 +6,8 @@
   padding: clamp(22px, 4vw, 38px);
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 18px 48px rgba(20, 27, 45, 0.08);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 18px 48px rgba(20, 27, 45, 0.16);
 }
 
 .project-copy {
@@ -55,10 +55,10 @@
 
 .tech-item {
   padding: 6px 9px;
-  border: 1px solid rgba(20, 27, 45, 0.1);
+  border: 1px solid rgba(20, 27, 45, 0.18);
   border-radius: 6px;
-  color: var(--muted);
-  background: rgba(245, 247, 251, 0.75);
+  color: var(--copy);
+  background: var(--surface-soft);
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.2;
@@ -89,9 +89,9 @@
 
 .site-links .source-site-btn {
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.64);
-  border-color: rgba(20, 27, 45, 0.14);
-  box-shadow: 0 8px 20px rgba(20, 27, 45, 0.07);
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(20, 27, 45, 0.24);
+  box-shadow: 0 8px 20px rgba(20, 27, 45, 0.1);
 }
 
 .site-links .site-btn:hover {
@@ -114,7 +114,7 @@
 
 .primary-site-btn .site-btn-icon {
   color: var(--blue-dark);
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.94);
 }
 
 .source-site-btn .site-btn-icon {
@@ -135,7 +135,7 @@
 .screenshot-frame {
   width: 100%;
   padding: 10px;
-  border: 1px solid rgba(20, 27, 45, 0.1);
+  border: 1px solid rgba(20, 27, 45, 0.18);
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(238, 244, 255, 0.76), rgba(255, 255, 255, 0.92)),
@@ -166,9 +166,9 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  border: 1px solid rgba(20, 27, 45, 0.1);
+  border: 1px solid rgba(20, 27, 45, 0.18);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.94);
   box-shadow: 0 8px 20px rgba(20, 27, 45, 0.06);
 }
 
@@ -205,7 +205,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.94);
   line-height: 1;
 }
 
@@ -226,7 +226,7 @@
   border-radius: 8px;
   color: var(--copy);
   background: #ffffff;
-  border: 2px solid rgba(20, 27, 45, 0.12);
+  border: 2px solid rgba(20, 27, 45, 0.2);
   font-size: 0.86rem;
   font-weight: 900;
 }

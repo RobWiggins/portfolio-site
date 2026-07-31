@@ -76,10 +76,11 @@
 
 .hero-highlights li {
   padding: 14px;
-  border: 1px solid rgba(20, 27, 45, 0.08);
+  border: 1px solid rgba(20, 27, 45, 0.16);
   border-radius: 8px;
   color: var(--copy);
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 6px 16px rgba(20, 27, 45, 0.06);
   font-size: 1rem;
   line-height: 1.55;
   font-weight: 700;
