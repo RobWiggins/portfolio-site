@@ -8,7 +8,8 @@
   --line: rgba(20, 27, 45, 0.24);
   --blue: #2f6fe4;
   --blue-dark: #174a9c;
-  --coral: #e75656;
+  --accent: #c2410c;
+  --accent-dark: #9a3412;
   --green: #1f9d7a;
   --shadow: 0 24px 60px rgba(20, 27, 45, 0.22);
 }
@@ -194,8 +195,12 @@ a:focus-visible {
 .action-link-text,
 .primary-site-btn {
   color: #ffffff;
-  background: var(--blue);
-  box-shadow: 0 16px 34px rgba(47, 111, 228, 0.24);
+  background: var(--accent);
+  box-shadow: 0 16px 34px rgba(194, 65, 12, 0.3);
+}
+
+.action-link-text:hover {
+  background: var(--accent-dark);
 }
 
 .secondary-action-link,

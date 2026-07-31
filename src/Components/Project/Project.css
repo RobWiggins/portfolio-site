@@ -81,10 +81,10 @@
 }
 
 .site-links .primary-site-btn {
-  color: var(--blue-dark);
-  background: rgba(47, 111, 228, 0.1);
-  border-color: rgba(47, 111, 228, 0.28);
-  box-shadow: 0 10px 24px rgba(47, 111, 228, 0.12);
+  color: #ffffff;
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px rgba(194, 65, 12, 0.3);
 }
 
 .site-links .source-site-btn {
@@ -113,7 +113,7 @@
 }
 
 .primary-site-btn .site-btn-icon {
-  color: var(--blue-dark);
+  color: var(--accent-dark);
   background: rgba(255, 255, 255, 0.94);
 }
 
