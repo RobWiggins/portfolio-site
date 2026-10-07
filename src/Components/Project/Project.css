@@ -14,10 +14,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--forest);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  color: var(--forest-deep);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -33,14 +33,16 @@
 .project-lede {
   margin: 14px 0 0;
   color: var(--ink);
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  line-height: 1.45;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.55;
 }
 
 .project-description {
   margin: 16px 0 0;
   color: var(--copy);
+  font-size: 1.125rem;
+  line-height: 1.7;
 }
 
 .tech-stack-list {
@@ -54,10 +56,11 @@
 
 .tech-item {
   padding: 6px 10px;
-  color: var(--copy);
+  color: var(--ink);
   background: var(--surface);
   border: 1px solid var(--line);
-  font-size: 0.8rem;
+  font-size: 0.88rem;
+  font-weight: 500;
 }
 
 .site-links {
@@ -93,8 +96,8 @@
 
 .screenshot-caption {
   margin: 10px 4px 0;
-  color: var(--muted);
-  font-size: 0.82rem;
+  color: var(--copy);
+  font-size: 0.92rem;
 }
 
 .carousel-btns {
@@ -108,10 +111,10 @@
 .carousel-nav-btn {
   min-height: 40px;
   padding: 0;
-  color: var(--copy);
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 

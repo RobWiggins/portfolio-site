@@ -8,6 +8,7 @@
   display: grid;
   gap: 28px;
   padding-top: 8px;
+  padding-bottom: 48px;
 }
 
 .hero-copy {
@@ -23,16 +24,17 @@
   max-width: 640px;
   margin: 14px 0 0;
   color: var(--ink);
-  font-family: var(--font-display);
-  font-size: clamp(1.25rem, 2vw, 1.55rem);
-  font-weight: 400;
-  line-height: 1.35;
+  font-size: clamp(1.2rem, 1.8vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.45;
 }
 
 .summary {
   max-width: 640px;
   margin: 16px 0 0;
   color: var(--copy);
+  font-size: 1.125rem;
+  line-height: 1.7;
 }
 
 .hero-actions {
@@ -61,7 +63,7 @@
 .profile-band {
   display: grid;
   gap: 36px;
-  padding-top: 8px;
+  padding-top: 56px;
   border-top: 1px solid var(--line);
 }
 
@@ -71,26 +73,23 @@
 
 .section-heading {
   margin: 0 0 12px;
-  font-size: clamp(1.55rem, 2.4vw, 1.9rem);
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
 }
 
 .profile-copy p {
   margin: 0 0 14px;
   color: var(--copy);
+  font-size: 1.125rem;
+  line-height: 1.7;
 }
 
 .profile-copy p:last-child {
   margin-bottom: 0;
 }
 
-.resume-band,
 .skills-band,
 .featured-work {
-  padding-top: 8px;
-}
-
-.skills-band,
-.featured-work {
+  padding-top: 56px;
   border-top: 1px solid var(--line);
 }
 
@@ -113,14 +112,16 @@
 }
 
 .timeline dt {
+  color: var(--ink);
   font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .timeline dd {
   margin: 0;
-  color: var(--muted);
+  color: var(--copy);
+  font-size: 1rem;
 }
 
 .skill-list {
@@ -134,10 +135,11 @@
 
 .skill-list li {
   padding: 8px 12px;
-  color: var(--copy);
+  color: var(--ink);
   border: 1px solid var(--line);
   background: var(--surface);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .featured-intro {
@@ -183,13 +185,16 @@
 }
 
 .featured-body strong {
+  color: var(--ink);
   font-family: var(--font-display);
   font-size: 1.45rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .featured-body span {
   color: var(--copy);
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .featured-arrow {
@@ -210,7 +215,7 @@
 
 @media (min-width: 880px) {
   .about-info {
-    gap: 28px;
+    gap: 36px;
   }
 
   .hero {
@@ -218,6 +223,7 @@
     grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.72fr);
     gap: 56px;
     align-items: start;
+    padding-bottom: 64px;
   }
 
   .hero-copy {
@@ -233,11 +239,12 @@
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
     gap: 48px;
     align-items: start;
-    padding-top: 4px;
+    padding-top: 64px;
   }
 
-  .resume-band {
-    padding-top: 0;
+  .skills-band,
+  .featured-work {
+    padding-top: 64px;
   }
 
   .profile-copy {
