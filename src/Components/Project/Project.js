@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import './Project.css'
 
 export default class Project extends Component {
@@ -7,112 +6,105 @@ export default class Project extends Component {
     currScreenshotIdx: 0,
   }
 
-  generateScreenshotNums() {
-    let screenshotElems = []
-    let numScreenshots = this.props.project.screenshotFiles.length
-    for (let i = 0; i < numScreenshots; i++) {
-      screenshotElems.push(
-        <li
-          key={i}
-          className={`scr-shot-num ${
-            i === this.state.currScreenshotIdx ? 'active-shot' : ''
-          }`}
-          aria-current={i === this.state.currScreenshotIdx ? 'true' : undefined}
-        >
-          {i + 1}
-        </li>
-      )
-    }
-    if (numScreenshots === 1) {
-      return ''
-    } else {
-      return screenshotElems
-    }
+  setScreenshot = (idx) => {
+    this.setState({ currScreenshotIdx: idx })
   }
 
   moveActiveScreenshot(increment) {
-    let numScreenshots = this.props.project.screenshotFiles.length
-    if (
-      increment > 0 &&
-      this.state.currScreenshotIdx + increment >= numScreenshots
-    ) {
-      this.setState({ currScreenshotIdx: 0 })
-    } else if (increment < 0 && this.state.currScreenshotIdx + increment < 0) {
-      this.setState({ currScreenshotIdx: numScreenshots - 1 })
-    } else {
-      this.setState({
-        currScreenshotIdx: this.state.currScreenshotIdx + increment,
-      })
-    }
+    const numScreenshots = this.props.project.screenshotFiles.length
+    this.setState((prev) => {
+      const next = prev.currScreenshotIdx + increment
+      if (next >= numScreenshots) return { currScreenshotIdx: 0 }
+      if (next < 0) return { currScreenshotIdx: numScreenshots - 1 }
+      return { currScreenshotIdx: next }
+    })
   }
 
   render() {
-    // build numbered boxes that light up and indicate which screenshot is active
-    // and how many screenshots there are total
-    let screenshotElems = this.generateScreenshotNums()
-    let activeScreenshot = this.props.project.screenshotFiles[this.state.currScreenshotIdx]
-    let projectLabel = this.props.project.sourceCodeSide === 'back'
-      ? 'Full-stack build'
+    const { project, index } = this.props
+    const activeScreenshot = project.screenshotFiles[this.state.currScreenshotIdx]
+    const projectLabel = project.sourceCodeSide === 'back'
+      ? 'Full-stack product'
       : 'Frontend product'
-
-    // generate tech stack list elements
-    let techList = this.props.project.tech.map((techItem, idx) => <li className="tech-item" key={idx}>{techItem}</li> )
+    const techList = project.tech.map((techItem) => (
+      <li className="tech-item" key={techItem}>{techItem}</li>
+    ))
+    const hasCarousel = project.screenshotFiles.length > 1
 
     return (
-      <article className="project-container">
+      <article className="project-container" id={project.slug}>
         <div className="project-copy">
-          <p className="project-label">{projectLabel}</p>
-          <h2 className="project-title">{this.props.project.title}</h2>
-          <p className="project-description">{this.props.project.description}</p>
+          <p className="project-label">
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            {projectLabel}
+          </p>
+          <h2 className="project-title">{project.title}</h2>
+          <p className="project-lede">{project.lede}</p>
+          <p className="project-description">{project.description}</p>
           <ul className="tech-stack-list">{techList}</ul>
           <div className="site-links">
             <a
-              href={this.props.project.demoLink}
+              href={project.demoLink}
               className="site-btn primary-site-btn"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="site-btn-icon" aria-hidden="true">&#8599;</span>
               Live demo
             </a>
             <a
-              href={this.props.project.githubLink}
+              href={project.githubLink}
               className="site-btn source-site-btn"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="site-btn-icon" aria-hidden="true">{'{ }'}</span>
               Source code
             </a>
           </div>
         </div>
 
         <div className="photo-area">
-          <div className="screenshot-frame">
+          <figure className="screenshot-frame">
             <picture className="picture-holder">
-              <source className="project-screenshot" srcSet={`../../static/${activeScreenshot.name}`} media="(min-width: 768px)" />
-              <source className="project-screenshot" srcSet={`../../static/${activeScreenshot.mobileName}`} media="(max-width: 769px)" />
-              <img className="project-screenshot" src={`../../static/${activeScreenshot.name}`} alt={activeScreenshot.alt}></img>
+              <source srcSet={`/static/${activeScreenshot.name}`} media="(min-width: 768px)" />
+              <source srcSet={`/static/${activeScreenshot.mobileName}`} media="(max-width: 767px)" />
+              <img
+                className="project-screenshot"
+                src={`/static/${activeScreenshot.name}`}
+                alt={activeScreenshot.alt}
+              />
             </picture>
-          </div>
-          {this.props.project.screenshotFiles.length !== 1 && (
-            <div className="carousel-btns" aria-label={`${this.props.project.title} screenshot controls`}>
+            <figcaption className="screenshot-caption">{activeScreenshot.alt}</figcaption>
+          </figure>
+          {hasCarousel && (
+            <div className="carousel-btns" aria-label={`${project.title} screenshot controls`}>
               <button
+                type="button"
                 onClick={() => this.moveActiveScreenshot(-1)}
                 className="carousel-nav-btn"
                 aria-label="Previous screenshot"
               >
-                <span className="carousel-btn-icon" aria-hidden="true">&#10094;</span>
                 Previous
               </button>
-              <ul className="scr-shots-num-holder">{screenshotElems}</ul>
+              <div className="scr-shots-num-holder" role="tablist" aria-label="Screenshots">
+                {project.screenshotFiles.map((shot, i) => (
+                  <button
+                    type="button"
+                    role="tab"
+                    key={shot.name}
+                    className={`scr-shot-num ${i === this.state.currScreenshotIdx ? 'active-shot' : ''}`}
+                    aria-selected={i === this.state.currScreenshotIdx}
+                    aria-label={`Show screenshot ${i + 1}: ${shot.alt}`}
+                    onClick={() => this.setScreenshot(i)}
+                  />
+                ))}
+              </div>
               <button
+                type="button"
                 onClick={() => this.moveActiveScreenshot(1)}
                 className="carousel-nav-btn"
                 aria-label="Next screenshot"
               >
                 Next
-                <span className="carousel-btn-icon" aria-hidden="true">&#10095;</span>
               </button>
             </div>
           )}

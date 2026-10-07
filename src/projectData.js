@@ -1,6 +1,8 @@
 const projectData = [
   {
+    slug: 'stay-informed',
     title: 'Stay Informed',
+    lede: 'Look up representatives, donors, and recent news coverage from a U.S. address.',
     description: `The Stay Informed web application enables United States residents to identify 
     their congressmen based on their address. Users can identify who their biggest donors are, how to contact them, 
     and track their representatives' latest mentions in the news. Use cases may include researching incumbent candidates, 
@@ -43,11 +45,12 @@ const projectData = [
         alt:
           'News portion of dashboard that holds articles that mention your district representatives',
       },
-      { 
+      {
         mobileName: 'SI_search_mobile_372w.jpg',
         mobileWidth: '372w',
-        name: 'SI_mobile_shots.jpg', 
-        alt: 'mobile responsive screenshots' },
+        name: 'SI_mobile_shots.jpg',
+        alt: 'mobile responsive screenshots',
+      },
       {
         mobileName: 'SI_contributions_mobile_372w.jpg',
         mobileWidth: '372w',
@@ -57,7 +60,9 @@ const projectData = [
     ],
   },
   {
+    slug: 'spaced-repetition',
     title: 'Spaced Repetition',
+    lede: 'Learn French vocabulary with a spaced-repetition engine that surfaces missed words more often.',
     description: `The Spaced Repetition web app utilizes the spaced repetition learning system to aid learning words in French. 
     It displays words in French and asks you to recall the translation of the corresponding word in English. The words that you 
     miss more frequently are shown more frequently. Upon mastery of each word, each word will 
@@ -88,28 +93,30 @@ const projectData = [
         alt:
           'Dashboard page which holds your word list and score for each word',
       },
-      { 
+      {
         mobileName: 'spaced-repetition-smaller-width-question.png',
         mobileWidth: '930w',
-        name: 'spaced-repetition-question.png', 
-        alt: 'Word translation question page' 
+        name: 'spaced-repetition-question.png',
+        alt: 'Word translation question page',
       },
-      { 
+      {
         mobileName: 'spaced-repetition-smaller-width-correct.png',
         mobileWidth: '920w',
-        name: 'spaced-repetition-correct.png', 
-        alt: 'Correct word translation answer feedback' 
+        name: 'spaced-repetition-correct.png',
+        alt: 'Correct word translation answer feedback',
       },
-      { 
+      {
         mobileName: 'spaced-repetition-smaller-width-wrong.png',
         mobileWidth: '924w',
-        name: 'spaced-repetition-wrong.png', 
-        alt: 'Incorrect word translation answer feedback' 
+        name: 'spaced-repetition-wrong.png',
+        alt: 'Incorrect word translation answer feedback',
       },
     ],
   },
   {
+    slug: 'barometer',
     title: 'Barometer',
+    lede: 'Measure the emotional tone of a topic on Twitter in real time using natural language processing.',
     description: `The Barometer web application enables users to quantitatively measure the general population’s 
     emotional view of events and subjects on Twitter in real-time. Through combining Twitter's tweet search API endpoint and IBM’s 
     natural language processing emotion endpoint, the results are aggregated into 6 defined emotional sentiment categories. 
@@ -144,7 +151,6 @@ const projectData = [
         alt:
           'Barometer search results page showing a flower query, matched tweets, and emotion charts',
       },
-
     ],
   },
 ]

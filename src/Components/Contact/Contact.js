@@ -4,34 +4,26 @@ import './Contact.css'
 export default class Contact extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
-    // sets new active tab on sidebar styling
-    this.props.handleNewRoute(2)
   }
 
   render() {
     return (
       <section className="contact-info">
-        <div className="contact-copy">
-          <p className="eyebrow">Contact</p>
-          <h1 className="contact-header">Let's build something useful.</h1>
-          <p className="contact-para">
+        <header className="page-intro">
+          <p className="kicker">Contact</p>
+          <h1 className="page-title">Let's build something useful.</h1>
+          <p className="lede">
             I am currently open to new software engineering roles and opportunities.
-            I would love to connect or catch up.  I can be reached via any of the following
-            methods.
+            The fastest way to reach me is email.
           </p>
-        </div>
+        </header>
 
-        <div className="contact-panel">
-          <div className="contact-card">
-            <span>Email</span>
-            <a
-              className="contact-link"
-              href="mailto:wigginsro11@gmail.com"
-            >
-              wigginsro11@gmail.com
-            </a>
-          </div>
-          <div className="contact-card">
+        <a className="email-hero" href="mailto:wigginsro11@gmail.com">
+          wigginsro11@gmail.com
+        </a>
+
+        <ul className="contact-panel">
+          <li className="contact-card">
             <span>LinkedIn</span>
             <a
               className="contact-link"
@@ -41,8 +33,8 @@ export default class Contact extends Component {
             >
               Robert Wiggins
             </a>
-          </div>
-          <div className="contact-card">
+          </li>
+          <li className="contact-card">
             <span>GitHub</span>
             <a
               className="contact-link"
@@ -52,8 +44,8 @@ export default class Contact extends Component {
             >
               @RobWiggins
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
     )
   }
