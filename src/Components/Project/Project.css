@@ -1,12 +1,13 @@
 .project-container {
   display: grid;
-  gap: 32px;
+  gap: 28px;
   padding-top: 8px;
   border-top: 1px solid var(--line);
 }
 
 .project-copy {
   min-width: 0;
+  max-width: 720px;
 }
 
 .project-label {
@@ -76,20 +77,25 @@
 
 .screenshot-frame {
   margin: 0;
-  padding: 12px;
+  padding: 10px;
   overflow: hidden;
   background: var(--surface);
   border: 1px solid var(--line);
 }
 
 .picture-holder {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
 }
 
 .project-screenshot {
-  width: 100%;
-  max-height: 560px;
   display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: min(78vh, 860px);
   object-fit: contain;
   background: #fff;
 }
@@ -150,12 +156,6 @@
 
 @media (min-width: 960px) {
   .project-container {
-    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-    gap: 48px;
-    align-items: start;
-  }
-
-  .project-li:nth-child(even) .project-copy {
-    order: 2;
+    gap: 36px;
   }
 }
