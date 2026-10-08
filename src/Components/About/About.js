@@ -103,11 +103,12 @@ export default class About extends Component {
                   to={{ pathname: '/portfolio', hash: `#${project.slug}` }}
                 >
                   <span className="featured-index">{String(idx + 1).padStart(2, '0')}</span>
-                  <span className="featured-body">
-                    <strong>{project.title}</strong>
-                    <span>{project.lede}</span>
+                  <strong className="featured-title">{project.title}</strong>
+                  <span className="featured-cta">
+                    View work
+                    <span aria-hidden="true">→</span>
                   </span>
-                  <span className="featured-arrow" aria-hidden="true">→</span>
+                  <span className="featured-lede">{project.lede}</span>
                 </Link>
               </li>
             ))}
