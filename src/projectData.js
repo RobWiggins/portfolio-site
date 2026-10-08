@@ -2,11 +2,8 @@ const projectData = [
   {
     slug: 'storyflow',
     title: 'StoryFlow',
-    lede: 'Turn a short problem statement into a Product Requirements Document (PRD), objectives, user stories, Gherkin scenarios, and engineering tasks.',
-    description: `StoryFlow helps solo founders and indie makers go from a paragraph of product thinking to a structured plan they can edit. Describe the problem you
-      want to solve, and it drafts a PRD, user stories with acceptance criteria, Gherkin scenarios, and engineering tasks — all cross-linked and saved so you can pick
-      up where you left off. Guest access and example seeds make it possible to explore a full plan without creating an account. Use cases may include scoping an MVP,
-      creative and practical idea generation, writing stories a team can implement, generating a roadmap, and keeping product decisions in one place instead of scattered docs.`,
+    lede: 'An AI-powered application that does the heavy lifting of product planning — generating ideas, stories, and concrete tasks from a short problem statement.',
+    description: `StoryFlow is an AI-powered application that does a large share of the work for you from very limited input. You describe the problem in a paragraph; the model then generates a full product plan: a Product Requirements Document (PRD), objectives, user stories with acceptance criteria, Gherkin scenarios, engineering tasks, and MVP scope. That output includes new ideas you may not have thought of, gaps you might have missed, and concrete tasks a team can implement. You start from a drafted, cross-linked plan instead of a blank page, then edit what the AI produced. Guest and OAuth login accounts allow you to save your work. Use cases may include scoping an MVP, generating a backlog, uncovering missing requirements, and keeping product decisions in one place instead of scattered docs.`,
     demoLink: 'https://storyflow-gamma.vercel.app/',
     githubLink: 'https://github.com/RobWiggins/AI-Product-Requirements-and-Planning-Generator',
     sourceCodeSide: 'front',
