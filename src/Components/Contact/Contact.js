@@ -30,8 +30,13 @@ export default class Contact extends Component {
               href="https://www.linkedin.com/in/robert-wiggins-7782b071/"
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="linkedin.com/in/robert-wiggins-7782b071"
             >
-              Robert Wiggins
+              linkedin.com/<wbr />
+              <span className="contact-url-rest">
+                in/robert-wiggins-7782b071
+                <span className="contact-link-mark" aria-hidden="true">↗</span>
+              </span>
             </a>
           </li>
           <li className="contact-card">
@@ -42,7 +47,8 @@ export default class Contact extends Component {
               rel="noopener noreferrer"
               target="_blank"
             >
-              @RobWiggins
+              github.com/RobWiggins
+              <span className="contact-link-mark" aria-hidden="true">↗</span>
             </a>
           </li>
         </ul>

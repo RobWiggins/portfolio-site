@@ -6,7 +6,6 @@ export default class Footer extends Component {
     return (
       <footer className="site-footer">
         <div className="footer-inner">
-          <p className="footer-copy">© {new Date().getFullYear()} Robert Wiggins</p>
           <ul className="footer-items">
             <li className="icon">
               <a
@@ -40,6 +39,7 @@ export default class Footer extends Component {
               </a>
             </li>
           </ul>
+          <p className="footer-copy">© {new Date().getFullYear()} Robert Wiggins</p>
         </div>
       </footer>
     );
