@@ -1,5 +1,76 @@
 const projectData = [
   {
+    slug: 'storyflow',
+    title: 'StoryFlow',
+    lede: 'Turn a short problem statement into a Product Requirements Document (PRD), objectives, user stories, Gherkin scenarios, and engineering tasks.',
+    description: `StoryFlow helps solo founders and indie makers go from a paragraph of product thinking to a structured plan they can edit. Describe the problem you
+      want to solve, and it drafts a PRD, user stories with acceptance criteria, Gherkin scenarios, and engineering tasks — all cross-linked and saved so you can pick
+      up where you left off. Guest access and example seeds make it possible to explore a full plan without creating an account. Use cases may include scoping an MVP,
+      creative and practical idea generation, writing stories a team can implement, generating a roadmap, and keeping product decisions in one place instead of scattered docs.`,
+    demoLink: 'https://storyflow-gamma.vercel.app/',
+    githubLink: 'https://github.com/RobWiggins/AI-Product-Requirements-and-Planning-Generator',
+    sourceCodeSide: 'front',
+    tech: [
+      'React',
+      'Redux',
+      'Tailwind CSS',
+      'TypeScript',
+      'Node.js',
+      'Zod',
+      'Express',
+      'Prisma',
+      'PostgreSQL',
+      'Claude Opus API',
+      'Jest, Enzyme, Chai, Mocha (testing)',
+      'Google OAuth',
+      'GitHub OAuth',
+    ],
+    screenshotFiles: [
+      {
+        name: 'storyflow-desktop-1440w-compose.png',
+        alt: 'StoryFlow compose page where you describe a product problem and draft a plan',
+        sources: [
+          { file: 'storyflow-desktop-1440w-compose.png', width: 1440 },
+          { file: 'storyflow-mobile-390w-compose.png', width: 390 },
+        ],
+      },
+      {
+        name: 'storyflow-desktop-1440w-saved-plans.png',
+        alt: 'StoryFlow home with a saved PupMatch plan after drafting',
+        sources: [
+          { file: 'storyflow-desktop-1440w-saved-plans.png', width: 1440 },
+          { file: 'storyflow-mobile-390w-saved-plans.png', width: 390 },
+        ],
+      },
+      {
+        name: 'storyflow-desktop-1440w-overview.png',
+        alt: 'StoryFlow plan overview showing the PupMatch PRD, epics, and brief',
+        sources: [
+          { file: 'storyflow-desktop-1440w-overview.png', width: 1440 },
+          { file: 'storyflow-1024w-overview.png', width: 1024 },
+          { file: 'storyflow-mobile-390w-dashboard.png', width: 390 },
+        ],
+      },
+      {
+        name: 'storyflow-desktop-1440w-epic-stories.png',
+        alt: 'StoryFlow epic with user stories listed for Discovery and Matching',
+        sources: [
+          { file: 'storyflow-desktop-1440w-epic-stories.png', width: 1440 },
+          { file: 'storyflow-1024w-epic-stories.png', width: 1024 },
+          { file: 'storyflow-mobile-390w-epics.png', width: 390 },
+        ],
+      },
+      {
+        name: 'storyflow-desktop-1440w-story-gherkin.png',
+        alt: 'Open StoryFlow user story with acceptance criteria and a Gherkin scenario',
+        sources: [
+          { file: 'storyflow-desktop-1440w-story-gherkin.png', width: 1440 },
+          { file: 'storyflow-mobile-390w-stories.png', width: 390 },
+        ],
+      },
+    ],
+  },
+  {
     slug: 'stay-informed',
     title: 'Stay Informed',
     lede: 'Look up representatives, donors, and recent news coverage from a U.S. address.',

@@ -33,7 +33,7 @@ export default class Portfolio extends Component {
           <p className="kicker">Selected work</p>
           <h1 className="page-title">Case studies</h1>
           <p className="lede">
-            Three full-stack products spanning civic data, language learning, and
+            Four products spanning product planning, civic data, language learning, and
             real-time sentiment analysis.
           </p>
         </header>

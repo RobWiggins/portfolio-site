@@ -92,7 +92,7 @@ export default class About extends Component {
             <p className="kicker">Selected work</p>
             <h2 id="featured-heading" className="section-heading">A few products I have shipped</h2>
             <p className="lede">
-              Civic data, learning systems, and real-time sentiment — each built as a full-stack application.
+              Product planning, civic data, learning systems, and real-time sentiment — each built as a shipped application.
             </p>
           </div>
           <ol className="featured-list">

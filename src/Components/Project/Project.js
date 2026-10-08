@@ -1,6 +1,24 @@
 import React, { Component } from 'react'
 import './Project.css'
 
+function screenshotSources(shot) {
+  if (Array.isArray(shot.sources) && shot.sources.length) {
+    return [...shot.sources].sort((a, b) => b.width - a.width)
+  }
+
+  return [
+    { file: shot.name, width: 768 },
+    { file: shot.mobileName, width: 767 },
+  ]
+}
+
+function sourceMinWidth(source, nextSmaller) {
+  if (source.width >= 1440 && nextSmaller && nextSmaller.width <= 500) {
+    return 768
+  }
+  return source.width
+}
+
 export default class Project extends Component {
   state = {
     currScreenshotIdx: 0,
@@ -30,6 +48,9 @@ export default class Project extends Component {
       <li className="tech-item" key={techItem}>{techItem}</li>
     ))
     const hasCarousel = project.screenshotFiles.length > 1
+    const sources = screenshotSources(activeScreenshot)
+    const fallbackSource = sources[0]
+    const smallestSource = sources[sources.length - 1]
 
     return (
       <article className="project-container" id={project.slug}>
@@ -50,14 +71,16 @@ export default class Project extends Component {
               Live demo
               <span aria-hidden="true">↗</span>
             </a>
-            <a
-              href={project.githubLink}
-              className="site-btn source-site-btn"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Source code
-            </a>
+            {project.githubLink && (
+              <a
+                href={project.githubLink}
+                className="site-btn source-site-btn"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Source code
+              </a>
+            )}
           </div>
           <p className="project-description">{project.description}</p>
           <ul className="tech-stack-list">{techList}</ul>
@@ -66,11 +89,24 @@ export default class Project extends Component {
         <div className="photo-area">
           <figure className="screenshot-frame">
             <picture className="picture-holder">
-              <source srcSet={`/static/${activeScreenshot.name}`} media="(min-width: 768px)" />
-              <source srcSet={`/static/${activeScreenshot.mobileName}`} media="(max-width: 767px)" />
+              {sources.slice(0, -1).map((source, i) => (
+                <source
+                  key={source.file}
+                  srcSet={`/static/${source.file}`}
+                  media={`(min-width: ${sourceMinWidth(source, sources[i + 1])}px)`}
+                />
+              ))}
+              <source
+                srcSet={`/static/${smallestSource.file}`}
+                media={`(max-width: ${
+                  sources.length > 1
+                    ? sourceMinWidth(sources[sources.length - 2], smallestSource) - 1
+                    : smallestSource.width
+                }px)`}
+              />
               <img
                 className="project-screenshot"
-                src={`/static/${activeScreenshot.name}`}
+                src={`/static/${fallbackSource.file}`}
                 alt={activeScreenshot.alt}
               />
             </picture>
