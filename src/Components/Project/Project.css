@@ -40,7 +40,7 @@
 }
 
 .project-description {
-  margin: 16px 0 0;
+  margin: 20px 0 0;
   color: var(--copy);
   font-size: 1.125rem;
   line-height: 1.7;
@@ -65,10 +65,15 @@
 }
 
 .site-links {
-  margin-top: 28px;
+  margin-top: 22px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 12px;
+}
+
+.site-links .primary-site-btn {
+  padding: 0 22px;
 }
 
 .photo-area {

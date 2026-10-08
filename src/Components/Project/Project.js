@@ -40,8 +40,6 @@ export default class Project extends Component {
           </p>
           <h2 className="project-title">{project.title}</h2>
           <p className="project-lede">{project.lede}</p>
-          <p className="project-description">{project.description}</p>
-          <ul className="tech-stack-list">{techList}</ul>
           <div className="site-links">
             <a
               href={project.demoLink}
@@ -50,6 +48,7 @@ export default class Project extends Component {
               target="_blank"
             >
               Live demo
+              <span aria-hidden="true">↗</span>
             </a>
             <a
               href={project.githubLink}
@@ -60,6 +59,8 @@ export default class Project extends Component {
               Source code
             </a>
           </div>
+          <p className="project-description">{project.description}</p>
+          <ul className="tech-stack-list">{techList}</ul>
         </div>
 
         <div className="photo-area">
