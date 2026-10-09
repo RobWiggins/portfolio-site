@@ -41,7 +41,7 @@ export default class Portfolio extends Component {
           {projects}
         </ul>
         <div className="portfolio-cta">
-          <p>Want to talk through a similar problem?</p>
+          <p>Want to connect and explore what we could build together?</p>
           <Link className="action-link-text" to="/contact">Start a conversation</Link>
         </div>
       </section>

@@ -83,6 +83,8 @@ export default class About extends Component {
             <li>React</li>
             <li>PostgreSQL</li>
             <li>RESTful APIs</li>
+            <li>RPC APIs</li>
+            <li>ORMs</li>
             <li>Third-party integrations</li>
           </ul>
         </section>
