@@ -1,8 +1,16 @@
 .project-container {
   display: grid;
   gap: 28px;
-  padding-top: 8px;
-  border-top: 1px solid var(--line);
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+@media (max-width: 700px) {
+  .project-container {
+    padding: 20px;
+  }
 }
 
 .project-copy {
@@ -15,7 +23,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--forest-deep);
+  color: var(--accent-text);
   font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -23,7 +31,7 @@
 }
 
 .project-label span {
-  color: var(--muted);
+  color: var(--text-subtle);
 }
 
 .project-title {
@@ -33,7 +41,7 @@
 
 .project-lede {
   margin: 14px 0 0;
-  color: var(--ink);
+  color: var(--accent-light);
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.55;
@@ -41,7 +49,7 @@
 
 .project-description {
   margin: 20px 0 0;
-  color: var(--copy);
+  color: var(--text-muted);
   font-size: 1.125rem;
   line-height: 1.7;
 }
@@ -56,11 +64,11 @@
 }
 
 .tech-item {
-  padding: 6px 10px;
-  color: var(--ink);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  font-size: 0.88rem;
+  padding: 3px 12px;
+  color: var(--accent-light);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -73,7 +81,7 @@
 }
 
 .site-links .site-btn {
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
 }
 
 .site-links .primary-site-btn {
@@ -88,14 +96,17 @@
   margin: 0;
   padding: 10px;
   overflow: hidden;
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
 
 .picture-holder {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
   background: #fff;
 }
 
@@ -111,7 +122,7 @@
 
 .screenshot-caption {
   margin: 10px 4px 0;
-  color: var(--copy);
+  color: var(--text-muted);
   font-size: 0.92rem;
 }
 
@@ -126,7 +137,7 @@
 .carousel-nav-btn {
   min-height: 40px;
   padding: 0;
-  color: var(--ink);
+  color: var(--text);
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -134,7 +145,7 @@
 }
 
 .carousel-nav-btn:hover {
-  color: var(--forest-deep);
+  color: var(--accent-text);
 }
 
 .scr-shots-num-holder {
@@ -156,11 +167,11 @@
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: var(--line);
+  background: var(--border);
 }
 
 .active-shot::after {
-  background: var(--forest);
+  background: var(--accent);
 }
 
 @media (min-width: 960px) {
