@@ -84,10 +84,6 @@
   border-radius: var(--radius-sm);
 }
 
-.site-links .primary-site-btn {
-  padding: 0 22px;
-}
-
 .photo-area {
   min-width: 0;
 }
