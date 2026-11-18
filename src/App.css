@@ -380,12 +380,11 @@ h3 {
 .footer-inner {
   width: min(100%, var(--content));
   margin: 0 auto;
-  padding: 28px 24px;
+  padding: 36px 24px 28px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 20px;
 }
 
 .footer-copy {
@@ -399,13 +398,14 @@ h3 {
   padding: 0;
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  gap: 64px;
   list-style: none;
 }
 
 .icon a {
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -422,8 +422,8 @@ h3 {
 }
 
 .icon svg {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
